@@ -1,0 +1,153 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+li{
+    list-style:none
+}
+
+a{
+    text-decoration:none;
+    font-size:14px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #f0f0f0; /* 배경색*/
+}
+
+.container {
+    width: 393px; /* 고정 가로 너비로 설정 */
+    /* text-align: center; */
+    background-color: #ffffff; /* 컨테이너 배경색 */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과*/
+}
+
+.motionGraphic {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: #9ea9f2; /* 컨테이너 배경색 */
+    
+}
+
+.decorate_1 {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.year {
+    margin: 00px;
+    padding: 0px;
+    rotate:90deg;
+    width: 50px;
+    
+}
+
+.decorate_2 {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.v-line {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-left : 1px solid #000000;
+    height : 85px;
+}
+
+.article_1 {
+    padding-top: 175px;
+    display: flex; /* Flexbox 레이아웃을 사용합니다. */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    text-align: center; /* 텍스트도 수평 가운데 정렬합니다. */
+    flex-direction: column; /* 내부 요소들을 수직으로 정렬합니다. */
+}
+
+.subTitle {
+    padding-top: 35px;
+}
+
+/** 메뉴 바 */
+.menu {
+    position: fixed;
+    width: 393px;
+    height: 90px;
+    overflow: hidden;
+    margin: 5px ;
+    padding: 5px;
+}
+
+.menu > li {
+    position: fixed;
+    width: 40px; /*20*5=100%*/
+    float: right;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #EDEDED;
+    position: sticky;
+}
+
+.menu a {
+    color: #D4D4D4;
+}
+
+.submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.submenu > li {
+    line-height: 30px;
+    /* background-color: #94a9ff; */
+}
+
+.logoImg {
+    position: fixed;
+    /* margin-top: 20px ; */
+    width: 40px;
+    float: center;
+    /* top: 2%;
+    left: 50%; */
+    left: calc(50% + 10px); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+    transform: translateX(-50%);
+
+    /* transform: translate(180px, 0%); */
+    transition: left 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
+}
+
+.logoImg.fixed {
+    left: calc(50% - 175px); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
+}
+
+/* 실험  */
+#scroll-to-section {
+    display: block; /* 앵커를 블록 요소로 표시 */
+    position: relative; /* 포지션 지정 */
+    top: -100px; /* 스크롤 위치에 따라 조절 (원하는 위치로 설정) */
+    visibility: hidden; /* 앵커 숨김 */
+    scroll-behavior: smooth;
+
+}
+
+/** 메뉴바 hover  */
+.menu > li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+    height: 100px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
