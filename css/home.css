@@ -76,7 +76,64 @@ body {
 
 .subTitle {
     padding-top: 35px;
+    font-weight: 10px;
+    color: #8f8e8e;
 }
+
+.contents {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.ani_1 {
+    font-size: 60px;
+    font-weight: lighter;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/** 가로 이동 텍스트 애니메이션 */
+#moving-text {
+    position: relative;
+    animation: moveRight 8s linear infinite;
+}
+
+@keyframes moveRight {
+    0% {                /** 출발 지점 */
+        left: -90%;
+    }
+    100% {              /** 도착 지점 */
+        left: 120%;
+    }
+}
+
+#moving-text_2 {
+    position: relative;
+    animation: moveLeft 5s linear infinite;
+}
+
+@keyframes moveLeft {
+    0% {                /** 출발 지점 */
+        right: -90%;
+    }
+    100% {              /** 도착 지점 */
+        right: 120%;
+    }
+}
+
+/** 가로 이동 이미지   */
+.image-container {
+    height: 100px;
+    display: flex;
+    overflow-x: auto;
+    gap: 50px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
 
 /** 메뉴 바 */
 .menu {
