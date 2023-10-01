@@ -82,7 +82,7 @@ body {
 .menu {
     position: fixed;
     width: 393px;
-    height: 90px;
+    height: 1200px;
     overflow: hidden;
     margin: 5px ;
     padding: 5px;
@@ -90,17 +90,23 @@ body {
 
 .menu > li {
     position: fixed;
-    width: 40px; /*20*5=100%*/
+    width: 50px;
     float: right;
-    border-radius: 100%;
-    text-align: center;
+    text-align: left;
     line-height: 40px;
-    background-color: #EDEDED;
     position: sticky;
 }
 
-.menu a {
-    color: #D4D4D4;
+.navItems {
+    width: 40px; /*20*5=100%*/
+    background-color: #EDEDED;
+    border-radius: 100%;
+}
+
+
+.menu a { /* 메뉴 텍스트 색 */
+    color: #8f8e8e;
+    font-size: 2px;
 }
 
 .submenu {
@@ -110,7 +116,7 @@ body {
 
 .submenu > li {
     line-height: 30px;
-    /* background-color: #94a9ff; */
+    background-color: transparent;
 }
 
 .logoImg {
@@ -143,7 +149,7 @@ body {
 
 /** 메뉴바 hover  */
 .menu > li:hover {
-    background-color: #94a9ff;
+    background-color: transparent;
     transition-duration: 0.5s;
 }
 
