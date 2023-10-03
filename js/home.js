@@ -21,3 +21,6 @@ document.querySelector('a[href="#scroll-to-section"]').addEventListener('click',
         behavior: 'smooth' // 부드러운 스크롤 애니메이션
     });
 });
+
+//! 이미지 가로 배열 애니메이션
+
