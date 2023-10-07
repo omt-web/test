@@ -137,7 +137,7 @@ body {
         position: fixed;
         width: 10vw;
         float: center;
-        right: calc(45vw + 5vw); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+        right: calc(41vw + 5vw); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
         transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
     }
     
