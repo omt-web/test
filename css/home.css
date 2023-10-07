@@ -1,16 +1,73 @@
+/** 폰트 설정 */
+@font-face {
+    font-family: 'Suit_Bold'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-Bold.otf') format('otf'),
+        url('../fonts/SUIT-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Suit_ExtraBold'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-ExtraBold.otf') format('otf')
+        url('../fonts/SUIT-ExtraBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Suit-ExtraLight'; /* 폰트 패밀리 이름  */
+    src: url('../fonts//SUIT-ExtraLight.otf') format('otf')
+        url('../fonts/SUIT-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Suit-Heavy'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-Heavy.otf') format('otf')
+        url('../fonts/SUIT-Heavy.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Suit-Light'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-Light.otf') format('otf')
+        url('../fonts/SUIT-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Suit-Medium'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-Medium.otf') format('otf')
+        url('../fonts/SUIT-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Suit-Regular'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-Regular.otf') format(otf),
+        url('../fonts/SUIT-Regular.ttf') format(ttf);
+}
+
+@font-face {
+    font-family: 'Suit-Thin'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-Thin.otf') format('otf'),
+        url('../fonts/SUIT-Thin.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Suit-SemiBold'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/SUIT-SemiBold.otf') format('otf')
+        url('../fonts/SUIT-SemiBold.ttf') format('ttf');
+}
+
+
+/** 전범위 설정 */
 *{
     padding:0;
     margin:0;
-    
 }
 
 li{
-    list-style:none
+    list-style:none;
+    text-decoration:none;
 }
 
 a{
     text-decoration:none;
-    font-size:14px
+    font-size:5vw
 }
 
 body {
@@ -24,18 +81,223 @@ body {
 }
 
 .container {
-    width: 393px; /* 고정 가로 너비로 설정 */
+    width: 100vw; /* 고정 가로 너비로 설정 */
     /* text-align: center; */
     background-color: #ffffff; /* 컨테이너 배경색 */
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과*/
+    padding: 5vw;
+    box-shadow: 0px 0px 50vw rgba(0, 0, 0, 0.1); /* 그림자 효과*/
+    font-family: 'Suit-Regular';        /* 폰트 적용. */ 
+
 }
 
+/** 메뉴 바 */
+
+    /*! 반응형  */
+/** 모바일 화면 */
+@media (max-width: 480px) {
+    /* 모바일 화면에 대한 스타일 지정 */
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: auto;       /* 전체 높이. */
+        overflow: hidden;
+        margin: 0vw;
+        padding-top: 0vw;
+        padding-bottom: 10vw;
+
+    }
+    
+    .menu > li {
+        position: fixed;
+        width: auto;
+        float: right;
+        text-align: center;
+        /* line-height: 10vw; */
+        position: sticky;
+        padding-right: 10vw;
+    }
+    
+    .navIcon {     /** 메뉴바 아이콘 */ 
+        width: 5vw;
+    }
+    
+    .menu a { /* 메뉴 텍스트 색 */
+        color: #000000;
+        font-size: 4vw;
+    }
+    
+    .submenu {      /* 메뉴 텍스트  */
+        /* height: auto; ul의 높이를 안보이게 처리 */
+        overflow: hidden;
+        line-height: 10vw;    /* 줄간격 */
+        background-color: transparent;
+        margin-top: 2vw;
+        /* margin-left: -5vw; */
+        padding-right: 3vw;
+        
+    }
+    
+    .logoImg {
+        position: fixed;
+        /* margin-top: 20px ; */
+        width: 10vw;
+        float: center;
+        /* top: 2%;
+        left: 50%; */
+        left: calc(50vw + 0vw); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+        /* transform: translateX(-3vw); */
+    
+        /* transform: translate(180px, 0%); */
+        transition: left 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
+    }
+    
+    .logoImg.fixed {
+        left: calc(50% - 175px); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
+    }
+
+    /** 메뉴바 hover  */
+    .menu > li:hover {
+        background-color: transparent;
+        transition-duration: 0.5s;
+    }
+
+    .menu > li:hover .submenu {
+        height: 100px; /*서브메뉴 li한개의 높이 50*5*/
+        transition-duration: 1s;
+    }
+
+}
+
+/**태블릿 화면 */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .menu {
+        position: fixed;
+        width: 393px;
+        height: 1200px;
+        overflow: hidden;
+        margin: 5px ;
+        padding: 5px;
+    }
+    
+    .menu > li {
+        position: fixed;
+        width: 50px;
+        float: right;
+        text-align: left;
+        line-height: 40px;
+        position: sticky;
+    }
+    
+    .navItems {
+        width: 40px; /*20*5=100%*/
+        background-color: #EDEDED;
+        border-radius: 100%;
+    }
+    
+    
+    .menu a { /* 메뉴 텍스트 색 */
+        color: #8f8e8e;
+        font-size: 2px;
+    }
+    
+    .submenu {
+        height: 0; /*ul의 높이를 안보이게 처리*/
+        overflow: hidden;
+    }
+    
+    .submenu > li {
+        line-height: 30px;
+        background-color: transparent;
+    }
+    
+    .logoImg {
+        position: fixed;
+        /* margin-top: 20px ; */
+        width: 40px;
+        float: center;
+        /* top: 2%;
+        left: 50%; */
+        left: calc(50% + 10px); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+        transform: translateX(-50%);
+    
+        /* transform: translate(180px, 0%); */
+        transition: left 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
+    }
+    
+    .logoImg.fixed {
+        left: calc(50% - 175px); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
+    }
+}
+
+/** 데스크탑 화면 */
+@media (min-width: 1025px) {
+    .menu {
+        position: fixed;
+        width: 393px;
+        height: 1200px;
+        overflow: hidden;
+        margin: 5px ;
+        padding: 5px;
+    }
+    
+    .menu > li {
+        position: fixed;
+        width: 50px;
+        float: right;
+        text-align: left;
+        line-height: 40px;
+        position: sticky;
+    }
+    
+    .navItems {
+        width: 40px; /*20*5=100%*/
+        background-color: #EDEDED;
+        border-radius: 100%;
+    }
+    
+    
+    .menu a { /* 메뉴 텍스트 색 */
+        color: #8f8e8e;
+        font-size: 2px;
+    }
+    
+    .submenu {
+        height: 0; /*ul의 높이를 안보이게 처리*/
+        overflow: hidden;
+    }
+    
+    .submenu > li {
+        line-height: 30px;
+        background-color: transparent;
+    }
+    
+    .logoImg {
+        position: fixed;
+        /* margin-top: 20px ; */
+        width: 40px;
+        float: center;
+        /* top: 2%;
+        left: 50%; */
+        left: calc(50% + 10px); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+        transform: translateX(-50%);
+    
+        /* transform: translate(180px, 0%); */
+        transition: left 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
+    }
+    
+    .logoImg.fixed {
+        left: calc(50% - 175px); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
+    }}
+
+
+
+
+
+/** 세부 설정 */
 .motionGraphic {
     padding-top: 300px;
     padding-bottom: 300px;
     background-color: #9ea9f2; /* 컨테이너 배경색 */
-    
 }
 
 .decorate_1 {
@@ -65,7 +327,7 @@ body {
     height : 85px;
 }
 
-.article_1 {
+.article {
     padding-top: 175px;
     display: flex; /* Flexbox 레이아웃을 사용합니다. */
     justify-content: center; /* 수평 가운데 정렬 */
@@ -85,132 +347,29 @@ body {
     margin-bottom: 70px;
 }
 
-.ani_1 {
+.decorate_3 {
     font-size: 60px;
     font-weight: lighter;
     margin-top: 70px;
     margin-bottom: 70px;
+    display: flex; /* Flexbox 레이아웃을 사용합니다. */
+    justify-content: center; /* 수평 가운데 정렬 */
 }
 
-/** 가로 이동 텍스트 애니메이션 */
-#moving-text {
-    position: relative;
-    animation: moveRight 8s linear infinite;
-}
-
-@keyframes moveRight {
-    0% {                /** 출발 지점 */
-        left: -90%;
-    }
-    100% {              /** 도착 지점 */
-        left: 120%;
-    }
-}
-
-#moving-text_2 {
-    position: relative;
-    animation: moveLeft 5s linear infinite;
-}
-
-@keyframes moveLeft {
-    0% {                /** 출발 지점 */
-        right: -90%;
-    }
-    100% {              /** 도착 지점 */
-        right: 120%;
-    }
-}
-
-/** 가로 이동 이미지   */
-.image-container {
-    height: 100px;
-    display: flex;
-    overflow-x: auto;
-    gap: 50px;
-}
-
-.image-container img {
-    width: 100%;
+.image-container img {      /*가로 이미지   */
+    width: 80px;
     height: auto;
 }
 
-
-/** 메뉴 바 */
-.menu {
-    position: fixed;
-    width: 393px;
-    height: 1200px;
-    overflow: hidden;
-    margin: 5px ;
-    padding: 5px;
-}
-
-.menu > li {
-    position: fixed;
-    width: 50px;
-    float: right;
-    text-align: left;
-    line-height: 40px;
-    position: sticky;
-}
-
-.navItems {
-    width: 40px; /*20*5=100%*/
-    background-color: #EDEDED;
-    border-radius: 100%;
+.decorate_4 {
+    font-size: 45px;
+    font-weight: lighter;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column; /* 세로로 쌓이도록 설정 */
+    align-items: center; /* 수직 가운데 정렬 */
+    text-align: center; /* 텍스트도 가운데 정렬 */
 }
 
 
-.menu a { /* 메뉴 텍스트 색 */
-    color: #8f8e8e;
-    font-size: 2px;
-}
-
-.submenu {
-    height: 0; /*ul의 높이를 안보이게 처리*/
-    overflow: hidden;
-}
-
-.submenu > li {
-    line-height: 30px;
-    background-color: transparent;
-}
-
-.logoImg {
-    position: fixed;
-    /* margin-top: 20px ; */
-    width: 40px;
-    float: center;
-    /* top: 2%;
-    left: 50%; */
-    left: calc(50% + 10px); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
-    transform: translateX(-50%);
-
-    /* transform: translate(180px, 0%); */
-    transition: left 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
-}
-
-.logoImg.fixed {
-    left: calc(50% - 175px); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
-}
-
-/* 실험  */
-#scroll-to-section {
-    display: block; /* 앵커를 블록 요소로 표시 */
-    position: relative; /* 포지션 지정 */
-    top: -100px; /* 스크롤 위치에 따라 조절 (원하는 위치로 설정) */
-    visibility: hidden; /* 앵커 숨김 */
-    scroll-behavior: smooth;
-
-}
-
-/** 메뉴바 hover  */
-.menu > li:hover {
-    background-color: transparent;
-    transition-duration: 0.5s;
-}
-
-.menu > li:hover .submenu {
-    height: 100px; /*서브메뉴 li한개의 높이 50*5*/
-    transition-duration: 1s;
-}
