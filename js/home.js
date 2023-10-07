@@ -22,5 +22,4 @@ document.querySelector('a[href="#scroll-to-section"]').addEventListener('click',
     });
 });
 
-//! 이미지 가로 배열 애니메이션
 
