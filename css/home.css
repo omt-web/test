@@ -86,25 +86,41 @@ body {
     background-color: #ffffff; /* 컨테이너 배경색 */
     padding: 5vw;
     box-shadow: 0px 0px 50vw rgba(0, 0, 0, 0.1); /* 그림자 효과*/
-    font-family: 'Suit-Regular';        /* 폰트 적용. */ 
+    /* font-family: 'Suit-SemiBold';        폰트 적용.  */
 
 }
 
-/** 메뉴 바 */
 
-    /*! 반응형  */
+/** 반응형 메뉴 바 */
+
 /** 모바일 화면 */
 @media (max-width: 480px) {
     .menu {
         position: fixed;
         width: 100vw;
-        height: auto;       /* 전체 높이. */
+        height: auto;       /* 전체 높이 */
         overflow: hidden;
         margin: 0vw;
         padding-top: 0vw;
         padding-bottom: 10vw;
     }
     
+    #nav-menu {
+        line-height: 40px;    /* 줄간격 */
+        background-color: transparent;
+        margin-top: 2vw;
+        padding-right: 3vw;
+    }
+
+    /* 나브 아이콘 스타일링 */
+    #nav-icon {
+        cursor: pointer;
+        width: 28px;
+        float: right;
+        margin-right: 3.5vw;
+        margin-top: 1.5vw;
+    }
+
     .menu > li {
         position: fixed;
         width: auto;
@@ -114,30 +130,21 @@ body {
         padding-right: 10vw;
     }
     
-    .navIcon {     /** 메뉴바 아이콘 */ 
-        width: 5vw;
-    }
-    
     .menu a { /* 메뉴 텍스트 색 */
         color: #000000;
-        font-size: 4vw;
+        font-family: "Suit-SemiBold" ;
+        font-size: 18px;
     }
     
-    .submenu {      /* 메뉴 텍스트  */
-        height: auto; /* ul의 높이를 안보이게 처리 */
-        overflow: hidden;
-        line-height: 10vw;    /* 줄간격 */
-        background-color: transparent;
-        margin-top: 2vw;
-        padding-right: 3vw;
+    .submenu > li {
+        display: none;
+    }
         
-    }
-    
     .logoImg {
         position: fixed;
-        width: 10vw;
+        width: 43px;
         float: center;
-        right: calc(41vw + 5vw); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+        right: calc(37vw + 5vw); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
         transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
     }
     
@@ -145,16 +152,7 @@ body {
         right: calc(40vw + 45vw); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
     }
 
-    /** 메뉴바 hover  */
-    .menu > li:hover {
-        background-color: transparent;
-        transition-duration: 0.5s;
-    }
 
-    .menu > li:hover .submenu {
-        height: 100px; /*서브메뉴 li한개의 높이 50*5*/
-        transition-duration: 1s;
-    }
 }
 
 /**태블릿 화면 */
@@ -162,13 +160,29 @@ body {
     .menu {
         position: fixed;
         width: 100vw;
-        height: auto;       /* 전체 높이. */
+        height: auto;       /* 전체 높이 */
         overflow: hidden;
         margin: 0vw;
         padding-top: 0vw;
         padding-bottom: 10vw;
     }
     
+    #nav-menu {
+        line-height: 70px;    /* 줄간격 */
+        background-color: transparent;
+        margin-top: 2vw;
+        padding-right: 3vw;
+    }
+
+    /* 나브 아이콘 스타일링 */
+    #nav-icon {
+        cursor: pointer;
+        width: 50px;
+        float: right;
+        margin-right: 3.5vw;
+        margin-top: 1.5vw;
+    }
+
     .menu > li {
         position: fixed;
         width: auto;
@@ -178,46 +192,25 @@ body {
         padding-right: 10vw;
     }
     
-    .navIcon {     /** 메뉴바 아이콘 */ 
-        width: 3.5vw;
-    }
-    
     .menu a { /* 메뉴 텍스트 색 */
         color: #000000;
-        font-size: 3.5vw;
+        font-family: "Suit-SemiBold" ;
+        font-size: 30px;
     }
     
-    .submenu {      /* 메뉴 텍스트  */
-        height: auto; /* ul의 높이를 안보이게 처리 */
-        overflow: hidden;
-        line-height: 10vw;    /* 줄간격 */
-        background-color: transparent;
-        margin-top: 2vw;
-        padding-right: 3vw;
-        
+    .submenu > li {
+        display: none;
     }
     
     .logoImg {
         position: fixed;
         width: 7vw;
-        float: center;
         right: calc(40vw + 5vw); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
         transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
     }
     
     .logoImg.fixed {
         right: calc(40vw + 45vw); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
-    }
-
-    /** 메뉴바 hover  */
-    .menu > li:hover {
-        background-color: transparent;
-        transition-duration: 0.5s;
-    }
-
-    .menu > li:hover .submenu {
-        height: 80vw; /*서브메뉴 li한개의 높이 50*5*/
-        transition-duration: 1s;
     }
 }
 
@@ -226,13 +219,29 @@ body {
     .menu {
         position: fixed;
         width: 100vw;
-        height: auto;       /* 전체 높이. */
+        height: auto;       /* 전체 높이 */
         overflow: hidden;
         margin: 0vw;
         padding-top: 0vw;
         padding-bottom: 10vw;
     }
     
+    #nav-menu {
+        line-height: 70px;    /* 줄간격 */
+        background-color: transparent;
+        margin-top: 2vw;
+        padding-right: 3vw;
+    }
+
+    /* 나브 아이콘 스타일링 */
+    #nav-icon {
+        cursor: pointer;
+        width: 50px;
+        float: right;
+        margin-right: 3.5vw;
+        margin-top: 1.5vw;
+    }
+
     .menu > li {
         position: fixed;
         width: auto;
@@ -242,28 +251,19 @@ body {
         padding-right: 10vw;
     }
     
-    .navIcon {     /** 메뉴바 아이콘 */ 
-        width: 3vw;
-    }
-    
     .menu a { /* 메뉴 텍스트 색 */
         color: #000000;
-        font-size: 2.5vw;
+        font-family: "Suit-SemiBold" ;
+        font-size: 25px;
     }
     
-    .submenu {      /* 메뉴 텍스트  */
-        height: auto; /* ul의 높이를 안보이게 처리 */
-        overflow: hidden;
-        line-height: 10vw;    /* 줄간격 */
-        background-color: transparent;
-        margin-top: 2vw;
-        padding-right: 3vw;
-        
+    .submenu > li {
+        display: none;
     }
     
     .logoImg {
         position: fixed;
-        width: 5vw;
+        width: 70px;
         float: center;
         right: calc(43vw + 5vw); /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
         transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
@@ -272,34 +272,23 @@ body {
     .logoImg.fixed {
         right: calc(40vw + 50vw); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
     }
-
-    /** 메뉴바 hover  */
-    .menu > li:hover {
-        background-color: transparent;
-        transition-duration: 0.5s;
-    }
-
-    .menu > li:hover .submenu {
-        height: 100px; /*서브메뉴 li한개의 높이 50*5*/
-        transition-duration: 1s;
-    }
 }
-
-
-
 
 
 /** 세부 설정 */
 .motionGraphic {
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 110vw;
+    padding-bottom: 110vw;
+    padding: 110vw 0vw 110vw 0vw;
     background-color: #9ea9f2; /* 컨테이너 배경색 */
+    width: 100vw;
 }
 
 .decorate_1 {
     display: flex;
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center; /* 수직 가운데 정렬 */
+    font-family: 'Suit-ExtraLight';
 }
 
 .year {
@@ -307,7 +296,7 @@ body {
     padding: 0px;
     rotate:90deg;
     width: 50px;
-    
+    font-size: 5vw;
 }
 
 .decorate_2 {
@@ -317,9 +306,9 @@ body {
 }
 
 .v-line {
-    margin-top: 10px;
+    margin-top: 8vw;
     margin-bottom: 0px;
-    border-left : 1px solid #000000;
+    border-left : 0.2vw solid #000000;
     height : 85px;
 }
 
