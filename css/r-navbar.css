@@ -1,0 +1,196 @@
+/**! improt */
+@import url('font.css');        /** 폰트 */
+@import url('normalize.css');   /** 전범위 */
+
+
+/**! 반응형 나브바 */
+@media (max-width: 480px) {     /** 모바일 화면 */
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: auto;               /* 전체 높이 */
+        overflow: hidden;
+        margin: 0vw;
+        padding-top: 2vw;
+        padding-bottom: 10vw;
+    }
+    
+    #nav-menu {
+        line-height: 40px;          /* 줄간격 */
+        background-color: transparent;
+        margin-top: 2vw;
+        padding-right: 3vw;
+    }
+
+    
+    #nav-icon {                     /* 나브 아이콘  */
+        cursor: pointer;
+        width: 28px;
+        float: right;
+        margin-right: 3.5vw;
+        margin-top: 1.5vw;
+    }
+
+    .menu > li {
+        position: fixed;
+        width: auto;
+        float: right;
+        text-align: center;
+        position: sticky;
+        padding-right: 2vw;
+    }
+    
+    .menu a {                       /* 메뉴 텍스트 색 */
+        color: #000000;
+        font-size: 18px;
+    }
+    
+    .submenu > li {
+        display: none;
+    }
+        
+    .logoImg {
+        position: fixed;
+        width: 43px;
+        float: center;
+        right: calc(37vw + 5vw);     /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+        transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
+    }
+    
+    .logoImg.fixed {
+        right: calc(40vw + 45vw);    /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {     /**태블릿 화면 */
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: auto;               /* 전체 높이 */
+        overflow: hidden;
+        margin: 0vw;
+        padding-top: 2vw;
+        padding-bottom: 10vw;
+    }
+    
+    #nav-menu {
+        line-height: 70px;          /* 줄간격 */
+        background-color: transparent;
+        margin-top: 2vw;
+        padding-right: 3vw;
+    }
+
+    #nav-icon {                     /* 나브 아이콘 스타일링 */
+        cursor: pointer;
+        width: 50px;
+        float: right;
+        margin-right: 3.5vw;
+        margin-top: 1.5vw;
+    }
+
+    .menu > li {
+        position: fixed;
+        width: auto;
+        float: right;
+        text-align: center;
+        position: sticky;
+        padding-right: 1vw;
+    }
+    
+    .menu a {                       /* 메뉴 텍스트 색 */
+        color: #000000;
+        font-family: "Suit-SemiBold" ;
+        font-size: 30px;
+    }
+    
+    .submenu > li {
+        display: none;
+    }
+    
+    .logoImg {
+        position: fixed;
+        width: 7vw;
+        right: calc(40vw + 5vw);    /* 스크롤을 내릴 때 왼쪽에서 10px만큼 이동 */
+        transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용 .. 시간 조절 불가능.. 안먹힘*/
+    }
+    
+    .logoImg.fixed {
+        right: calc(40vw + 45vw);   /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
+    }
+}
+
+@media (min-width: 1025px) {    /** 데스크탑 화면 */
+    #nav-menu {
+        line-height: 70px;      /* 줄간격 */
+    }
+
+    #nav-icon {                 /* 나브 아이콘 스타일링 */
+        width: 50px;
+    }
+    
+    .menu a {                   /* 메뉴 텍스트 색 */
+        font-size: 25px;
+    }
+    
+    .logoImg {
+        width: 70px;
+        right: calc(40vw + 5vw); /* 스크롤을 내릴 때 왼쪽에서 이동 */
+    }
+    
+    .logoImg.fixed {
+        right: calc(40vw + 50vw); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
+    }
+}
+
+/**! 나브 바 공통설정 */
+/* 페이지 크기와 상관없이 유지 */
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: auto;               /* 전체 높이 */
+    overflow: hidden;
+    margin: 0vw;
+    padding-top: 2vw;
+    padding-bottom: 10vw;
+}
+
+#nav-menu {
+    background-color: transparent;
+    margin-top: 2vw;
+    padding-right: 3vw;
+}
+
+#nav-icon {                     /* 나브 아이콘  */
+    cursor: pointer;
+    float: right;
+    margin-right: 3.5vw;
+    margin-top: 1.5vw;
+}
+
+.menu > li {
+    position: fixed;
+    width: auto;
+    float: right;
+    text-align: center;
+    position: sticky;
+    padding-right: 2vw;
+}
+
+.menu a {                        /* 메뉴 텍스트 색 */
+    color: #000000;
+}
+
+.submenu > li {
+    display: none;
+}
+    
+.logoImg {
+    position: fixed;
+    float: center;
+    transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용*/
+}
+
+.menu a { 
+    color: #000000;             /* 메뉴 텍스트 색 */
+    font-family: "Suit-SemiBold" ;
+}

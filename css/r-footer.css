@@ -1,0 +1,98 @@
+/**! improt */
+@import url('font.css');        /** 폰트 */
+@import url('normalize.css');   /** 전범위 */
+
+/**! 반응형 푸터 */
+@media (max-width: 480px) {     /** 모바일 화면 */
+    #invite, #info {
+        font-size: 30px;
+    }
+
+    #inviteURL {
+        font-size: 20px;
+    }
+    
+    .info {
+        font-size: 1px;
+    }
+
+    #kakoURL, #instargramURL, #mailURL {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {         /**태블릿 화면 */
+    #invite, #info {
+        font-size: 47px;
+    }
+
+    #inviteURL {
+        font-size: 31px;
+    }
+    
+    .info {
+        font-size: 2px;
+    }
+
+    #kakoURL, #instargramURL, #mailURL {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1025px) {    /** 데스크탑 화면 */
+    #invite, #info {
+        font-size: 64px;
+    }
+
+    #inviteURL {
+        font-size: 43px;
+    }
+    
+    .info {
+        font-size: 2px;
+    }
+
+    #kakoURL, #instargramURL, #mailURL {
+        font-size: 32px;
+    }
+}
+
+/**! 푸터 공통설정 */
+/* 페이지 크기와 상관없이 유지 */
+footer {
+    padding-top: 80vw;
+    padding-bottom: 45vw;
+}
+
+#invite, #info {
+    padding-left: 5vw;
+    padding-bottom: 8vw;
+    font-family: 'Suit-ExtraBold';
+    font-weight: bold; 
+}
+
+.inviteURL {
+    background-color: #D9D9D9;
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-bottom: 15vw;
+}
+
+#inviteURL {
+    text-align: center;
+    font-family: 'Suit-Medium'; /* 폰트 패밀리 이름  */
+}
+
+
+#kakoURL, #instargramURL, #mailURL {
+    color: #000000;
+    font-family: 'Suit-ExtraLight';
+}
+
+.info {
+    font-family: 'Suit-ExtraLight';
+    padding-top: 10vw;
+}
