@@ -1,65 +1,68 @@
-<!--! exhibition -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/exhibition.css">
-    <title>exhibition</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="../html/home.html">Ornament</a>
-            <a href="../html/aboutUs.html">About Us</a>
-        </nav>
-    </header>
-
+<html lang="en, kr">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/exhibition.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/navbar.js"></script>
+        <title>exhibition</title>
+    </head>
     <body>
-        <div class="article_1">
-            <h1>오너먼트</h1>
-            <h2>오너먼트 소개</h2>
-            <p>오너먼트 소개 글 입니다. 여기에 오너먼트에 대한 설명을 넣어주세요.  <br/> 
-                오너먼트 소개 글 입니다. 여기에 오너먼트에 대한 설명을 넣어주세요. <br/> 
-                오너먼트 소개 글 입니다. 여기에 오너먼트에 대한 설명을 넣어주세요. <br/> 
-            </p>
-        </div>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <img src="../src/logo.png" alt="logo" class="logoImg">
+                        <li>
+                            <div class="nav-icon">
+                                <img src="../src/navicon.png" alt="나브 아이콘" id="nav-icon">
+                            </div>
+                            <ul class="nav-menu" id="nav-menu">
+                                <li><a href="../html/home.html">Ornament</a></li>
+                                <li><a href="../html/exhibition.html">Exhibition</a></li>
+                                <li><a href="../html/aboutUs.html">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <div class="article_2">
-            <h1>
-                <a href="참가신청 주소 ">참가 신청 하기</a>
-            </h1>
-        </div>
-
-        <div class="article_3">
-            <h1>참가자 QnA</h1>
-
-            <div class="qna_1">
-                <h2>Q. </br> 오너먼트는 무엇을 전시하나요?</h2>
-                <h3>A. </br> 오너먼트는 ...</h3>
-            </div>
-
-            <div class="qna_2">
-                <h2>Q. </br> 오너먼트는 무엇을 전시하나요?</h2>
-                <h3>A. </br> 오너먼트는 ...</h3>
-            </div>
-
-            <div class="qna_3">
-                <h2>Q. </br> 오너먼트는 무엇을 전시하나요?</h2>
-                <h3>A. </br> 오너먼트는 ...</h3>
-            </div>
-
-            <div class="qna_4">
-                <h2>Q. </br> 오너먼트는 무엇을 전시하나요?</h2>
-                <h3>A. </br> 오너먼트는 ...</h3>
-            </div>
-        </div>
+            <body>
+                <!--! 오너먼트 전시 소개에 대한 내용을 넣어주세요  -->
+                <p>
+                    <br><br><br><br><br><br><br>
+                </p>
+                <a href="../html/qna.html">QnA</a>
+            </body>
         
+
+            <footer>
+                <div class="invite">
+                    <p id="invite">To Participate</p>
+                    <div class="inviteURL">
+                        <a href="#" id="inviteURL">참여 url 주소</a>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <p id="info">CONTACT US</p>
+                    <div class="kakao">
+                        <img src="#" alt="카카오 채널 이미지">
+                        <a href="#" id="kakoURL">kakao</a>
+                    </div>
+
+                    <div class="instargram">
+                        <img src="#" alt="인스타그램 이미지">
+                        <a href="#"  id="instargramURL">instagram</a>
+                    </div>
+
+                    <div class="mail">
+                        <img src="#" alt="지메일 이미지">
+                        <a href="#"  id="mailURL">mail</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
-
-    <footer>
-
-    </footer>
-    
-</body>
 </html>
