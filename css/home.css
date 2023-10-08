@@ -144,6 +144,8 @@ body {
 
 /** 모바일 화면 */
 @media (max-width: 480px) {
+
+    /*! 나브 바  */
     .menu {
         position: fixed;
         width: 100vw;
@@ -161,7 +163,7 @@ body {
         padding-right: 3vw;
     }
 
-    /* 나브 아이콘 스타일링 */
+    /* 나브 아이콘  */
     #nav-icon {
         cursor: pointer;
         width: 28px;
@@ -200,6 +202,33 @@ body {
     .logoImg.fixed {
         right: calc(40vw + 45vw); /* 스크롤을 내릴 때 왼쪽 끝으로 이동할 위치 설정 */
     }
+
+
+    /*! body  */
+    .title {
+        font-size: 35px;
+    }
+
+    .year {
+        font-size: 5px;
+    }
+
+    .subTitle {
+        font-size: 12px;
+    }
+
+    .contents {
+        font-size: 14px;
+    }
+
+    .decorate_3 {
+        font-size: 50px;
+    }
+
+    .decorate_4 {
+        font-size: 45px;
+    }
+
 
 
     /*! footer */
@@ -379,7 +408,6 @@ body {
     padding: 0px;
     rotate:90deg;
     width: 50px;
-    font-size: 5vw;
 }
 
 .decorate_2 {
@@ -407,24 +435,20 @@ body {
 
 .title {
     font-family: 'Suit-Regular';
-    font-size: 10vw;
 }
 
 .subTitle {
     padding-top: 35px;
     font-family: 'Suit-ExtraLight';
-    font-size: 3vw;
 }
 
 .contents {
     margin: 20vw 15vw 30vw 15vw;
-    font-size: 3vw;
     font-family: 'Pretendard-Medium';
 }
 
 .decorate_3 {
-    font-size: 12vw;
-    font-family: 'Suit-Thin';
+    font-family: 'Suit-Thin'; /* 폰트 패밀리 이름  */
     margin-top: 20vw;
     margin-bottom: 20vw;
     display: flex; /* Flexbox 레이아웃을 사용합니다. */
@@ -469,7 +493,6 @@ body {
 }
 
 .decorate_4 {
-    font-size: 45px;
     font-weight: lighter;
     margin-top: 70px;
     margin-bottom: 70px;
