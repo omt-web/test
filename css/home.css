@@ -100,9 +100,6 @@
     src: url('../fonts/Pretendard-Thin.ttf') format('ttf');
 }
 
-
-
-
 /** 전범위 설정 */
 *{
     padding:0;
@@ -132,11 +129,8 @@ body {
 
 .container {
     width: 100vw; /* 고정 가로 너비로 설정 */
-    /* text-align: center; */
     background-color: #ffffff; /* 컨테이너 배경색 */
-    
     box-shadow: 0px 0px 50vw rgba(0, 0, 0, 0.1); /* 그림자 효과*/
-
 }
 
 
@@ -183,7 +177,6 @@ body {
     
     .menu a { /* 메뉴 텍스트 색 */
         color: #000000;
-        font-family: "Suit-SemiBold" ;
         font-size: 18px;
     }
     
@@ -222,7 +215,7 @@ body {
     }
 
     .decorate_3 {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .decorate_4 {
@@ -230,12 +223,9 @@ body {
     }
 
 
-
     /*! footer */
     #invite, #info {
-        font-family: 'Suit-ExtraBold';
         font-size: 30px;
-        font-weight: bold; 
         padding-left: 5vw;
         padding-bottom: 8vw;
     }
@@ -249,19 +239,17 @@ body {
         align-items: center; /* 세로 중앙 정렬 */
         margin-bottom: 15vw;
     }
+
     #inviteURL {
-        font-family: 'Suit-Medium'; /* 폰트 패밀리 이름  */
         font-size: 20px;
         text-align: center;
     }
     
     .info {
-        font-family: 'Suit-ExtraLight';
         font-size: 1px;
     }
 
     #kakoURL, #instargramURL, #mailURL {
-        font-family: 'Suit-ExtraLight';
         font-size: 15px;
         color: #000000;
     }
@@ -388,6 +376,14 @@ body {
 
 
 /** 세부 설정 */
+
+/** 나브 바 */
+.menu a { /* 메뉴 텍스트 색 */
+    color: #000000;
+    font-family: "Suit-SemiBold" ;
+}
+
+
 .motionGraphic {
     padding-top: 110vw;
     padding-bottom: 110vw;
@@ -448,7 +444,7 @@ body {
 }
 
 .decorate_3 {
-    font-family: 'Suit-Thin'; /* 폰트 패밀리 이름  */
+    font-family: 'Suit-SemiBold'; /* 폰트 패밀리 이름  */    
     margin-top: 20vw;
     margin-bottom: 20vw;
     display: flex; /* Flexbox 레이아웃을 사용합니다. */
@@ -502,4 +498,22 @@ body {
     text-align: center; /* 텍스트도 가운데 정렬 */
     padding-top: 10vw;
     padding-bottom: 20vw;
+}
+
+/** footer */
+#invite, #info {
+    font-family: 'Suit-ExtraBold';
+    font-weight: bold; 
+}
+
+#inviteURL {
+    font-family: 'Suit-Medium'; /* 폰트 패밀리 이름  */
+}
+
+.info {
+    font-family: 'Suit-ExtraLight';
+}
+
+#kakoURL, #instargramURL, #mailURL {
+    font-family: 'Suit-ExtraLight';
 }
