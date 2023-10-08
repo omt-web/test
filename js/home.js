@@ -15,6 +15,10 @@ $(document).ready(function() {
     const navIcon = $("#nav-icon");
     const navMenu = $("#nav-menu");
 
+    // 나브 메뉴를 초기에 숨김
+    navIcon.show();
+    navMenu.hide();
+
     // 나브 아이콘을 클릭했을 때 이벤트 처리
     navIcon.click(function() {
         // 나브바 항목의 보이기/숨기기를 토글
