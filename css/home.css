@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'Suit_ExtraBold'; /* 폰트 패밀리 이름  */
+    font-family: 'Suit-ExtraBold'; /* 폰트 패밀리 이름  */
     src: url('../fonts/SUIT-ExtraBold.otf') format('otf')
         url('../fonts/SUIT-ExtraBold.ttf') format('ttf');
 }
@@ -116,7 +116,8 @@ li{
 
 a{
     text-decoration:none;
-    font-size:5vw
+    font-size:5vw;
+    /* color: inherit; 링크 텍스트 색상을 부모 요소의 색상으로 상속 */
 }
 
 body {
@@ -133,13 +134,13 @@ body {
     width: 100vw; /* 고정 가로 너비로 설정 */
     /* text-align: center; */
     background-color: #ffffff; /* 컨테이너 배경색 */
-    padding: 5vw;
+    
     box-shadow: 0px 0px 50vw rgba(0, 0, 0, 0.1); /* 그림자 효과*/
 
 }
 
 
-/** 반응형 메뉴 바 */
+/** 반응형 메뉴 바 + 푸터 */
 
 /** 모바일 화면 */
 @media (max-width: 480px) {
@@ -175,7 +176,7 @@ body {
         float: right;
         text-align: center;
         position: sticky;
-        padding-right: 10vw;
+        padding-right: 2vw;
     }
     
     .menu a { /* 메뉴 텍스트 색 */
@@ -201,6 +202,40 @@ body {
     }
 
 
+    /*! footer */
+    #invite, #info {
+        font-family: 'Suit-ExtraBold';
+        font-size: 30px;
+        font-weight: bold; 
+        padding-left: 5vw;
+        padding-bottom: 8vw;
+    }
+
+    .inviteURL {
+        background-color: #D9D9D9;
+        width: 80vw;
+        margin-left: 10vw;
+        display: flex;
+        justify-content: center; /* 가로 중앙 정렬 */
+        align-items: center; /* 세로 중앙 정렬 */
+        margin-bottom: 15vw;
+    }
+    #inviteURL {
+        font-family: 'Suit-Medium'; /* 폰트 패밀리 이름  */
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .info {
+        font-family: 'Suit-ExtraLight';
+        font-size: 1px;
+    }
+
+    #kakoURL, #instargramURL, #mailURL {
+        font-family: 'Suit-ExtraLight';
+        font-size: 15px;
+        color: #000000;
+    }
 }
 
 /**태블릿 화면 */
@@ -397,47 +432,41 @@ body {
 }
 
 /** 이미지 부분 */
+/* 이미지 스타일 */
 .scroll {
-    background-color: #9ea9f2; /* 스크롤 영역 배경색 설정 */
-    padding: 30vw; /* 스크롤 영역 패딩 추가 */
-    overflow: auto; /* 스크롤 가능하도록 설정 */
-    width: 100vw; /* 전체 너비 사용 */
-    display: flex; /* Flexbox 사용 */
-    justify-content: center; /* 가로 중앙 정렬 */
-    align-items: center; /* 세로 중앙 정렬 */
+    overflow-x: hidden; /* 가로 스크롤 막기 */
 }
 
 .image-container {
-    display: flex; /* 이미지를 가로로 나란히 배치하기 위해 Flexbox 사용 */
-    gap: 8vw; /* 이미지 간격을 3vw로 지정 */
-    white-space: nowrap; /* 이미지가 한 줄로 나타나도록 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 0vw;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 8vw;
 }
 
-/* 이미지 스타일 */
+.image-container::-webkit-scrollbar {
+    height:0.8vw;
+    background-color: #A4A4A4;
+    border-radius: 100vw;
+}
+
+.image-container::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 5px;
+    max-width: 1vw;
+}
+
 .image-container img {
-    max-width: 30vw; /* 이미지 크기를 최대 너비로 설정 */
-    height: auto; /* 이미지 높이 자동 조정 */
+    width: 35vw;
+    height: auto;
+    margin-right: 8vw;
+    scroll-snap-align: cnter;
 }
-
-/** 스크롤 바의 스타일 설정 */
-/* 스크롤 바 배경색 */
-.scroll::-webkit-scrollbar {
-    width: 80vw; /* 스크롤 바 너비 설정 */
-    background-color: #870f0f; /* 스크롤 바 배경색 설정 */
-}
-
-/* 스크롤 바의 스크롤 진척도 색상 설정 */
-.scroll::-webkit-scrollbar-thumb {
-    height: 5vw;
-    background-color: #ff6600; /* 스크롤 진척도 색상 설정 */
-}
-
-/* 스크롤 바의 스크롤 진척도 색상 설정 (hover 상태) */
-.scroll::-webkit-scrollbar-thumb:hover {
-    background-color: #ff9900; /* 스크롤 진척도 hover 시 색상 변경 */
-}
-
-
 
 .decorate_4 {
     font-size: 45px;
@@ -451,5 +480,3 @@ body {
     padding-top: 10vw;
     padding-bottom: 20vw;
 }
-
-
