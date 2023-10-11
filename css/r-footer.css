@@ -84,6 +84,7 @@ footer {
 #inviteURL {
     text-align: center;
     font-family: 'Suit-Medium'; /* 폰트 패밀리 이름  */
+    color: #000000;
 }
 
 
@@ -95,4 +96,11 @@ footer {
 .info {
     font-family: 'Suit-ExtraLight';
     padding-top: 10vw;
+}
+
+#kakaopng, #instargrampng, #mailpng {
+    margin: 0vw;
+    padding-top: 2vw;
+    padding-left: 10vw;
+    width: 6vw;
 }
