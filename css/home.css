@@ -156,6 +156,7 @@
     margin-bottom: 20vw;
     display: flex; /* Flexbox 레이아웃을 사용합니다. */
     justify-content: center; /* 수평 가운데 정렬 */
+    color: #000000;
 }
 
 .decorate_4 {

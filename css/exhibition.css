@@ -3,3 +3,111 @@
 @import url('normalize.css');   /** 전범위 */
 @import url('r-navbar.css');    /** 반응형 나브 바 */
 @import url('r-footer.css');    /** 반응형 푸터 */
+
+
+/**! 반응형 상세설정 */
+@media (max-width: 480px) {     /** 모바일 화면 */
+    /*! body  */
+    .title {
+        font-size: 35px;
+    }
+
+    .subTitle {
+        font-size: 12px;
+    }
+
+    .contents {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {     /**태블릿 화면 */
+    /*! body  */
+    
+}
+
+@media (min-width: 1025px) {     /** 데스크탑 화면 */
+    /*! body  */
+
+}
+
+/**! home page style */
+
+/** 아코디언 */
+.toggle-section {
+    position: relative;
+    max-width:70vw ;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .toggle-button {
+    cursor: pointer;
+    padding: 10px;
+    background-color:#ffffff;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .content {
+    /* 초기에 표시되는 내용의 양을 제어합니다. */
+    max-height: 50vw; /* 원하는 초기 높이로 조정 */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    position: relative;
+    padding: 1vw;
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 5vw; /* 높이를 조정하여 그라데이션 부분을 내용의 어디까지 적용할지 결정합니다. */
+    background-image: linear-gradient(transparent, white);
+    pointer-events: none;
+  }
+  
+
+  /** 토글 - 이미지  수평배치*/
+.exhibit-bg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/** 이미지 */
+#decorate_1 {
+    width: 10vw;
+    padding-bottom: 0vw;
+    margin-bottom: 0vw;
+    margin-top: 20vw;
+    padding-top: 0vw;
+}
+
+
+/* * 년도 꾸밈 */
+.year {
+    padding-top: 70vw;
+    rotate:90deg;
+    margin-left: 70vw;
+}
+
+.decorate_3 {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.v-line {
+    margin-top: 8vw;
+    margin-bottom: 0vw;
+    border-left : 0.2vw solid #000000;
+    height : 20vw;
+}
