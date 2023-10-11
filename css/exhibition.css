@@ -93,4 +93,21 @@
 
 
 /* * 년도 꾸밈 */
+.year {
+    padding-top: 70vw;
+    rotate:90deg;
+    margin-left: 70vw;
+}
 
+.decorate_3 {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+.v-line {
+    margin-top: 8vw;
+    margin-bottom: 0vw;
+    border-left : 0.2vw solid #000000;
+    height : 20vw;
+}
