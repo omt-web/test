@@ -13,6 +13,8 @@
         margin: 0vw;
         padding-top: 2vw;
         padding-bottom: 10vw;
+        top: 0;
+        z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 값을 높게 설정 */
     }
     
     #nav-menu {
