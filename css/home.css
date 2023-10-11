@@ -91,8 +91,12 @@
     padding-top: 110vw;
     padding-bottom: 110vw;
     padding: 110vw 0vw 110vw 0vw;
-    background-color: #9ea9f2; /* 컨테이너 배경색 */
+    /* width: 10vw; */
+}
+
+#motion{
     width: 100vw;
+    
 }
 
 .decorate_1 {
