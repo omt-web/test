@@ -204,9 +204,10 @@
 #test_title_1 {
     margin-left: 10vw;
     color: #000;
-    font-family: 'Suit-Heavy'; /* 폰트 패밀리 이름  */
-    font-weight: 400;
+    font-family: 'Suit-Regular'; /* 폰트 패밀리 이름  */
 font-size: 30px;
+font-style: normal;
+font-weight: 900;
 line-height: 30px; /* 100% */
 margin-bottom: 20vw;
 }
@@ -214,20 +215,23 @@ margin-bottom: 20vw;
 #test_article_1 {
     margin-left: 10vw;
     color: #000;
-    font-family: 'Pretendard-Regular'; /* 폰트 패밀리 이름  */
+    font-family: Pretendard-Medium;
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 16px; /* 133.333% */
 margin-bottom: 20vw;
 }
 
 #test_subtitle_1 {
     margin-left: 10vw;
-    margin-right: 10vw;
-    font-family: 'Suit-SemiBold'; /* 폰트 패밀리 이름  */
 
     color: #000;
 text-align: center;
+font-family: SUIT;
 font-size: 12px;
+font-style: normal;
+font-weight: 600;
 line-height: 20px; /* 166.667% */
 margin-bottom: 50vw;
 }
@@ -236,7 +240,7 @@ margin-bottom: 50vw;
     margin-left: 10vw;
     color: #000;
 font-family: Suit-Regular;
-font-size: 33px;
+font-size: 31.5px;
 font-style: normal;
 font-weight: 900;
 line-height: 30px; /* 100% */
@@ -247,10 +251,10 @@ margin-bottom: 20vw;
     margin-left: 10vw;
     color: #000;
     font-family: Pretendard-Medium;
-    font-size: 15px;
+    font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px; /* 133.333% */
+    line-height: 19px; /* 133.333% */
 margin-bottom: 20vw;
 }
 
@@ -260,10 +264,10 @@ margin-bottom: 20vw;
     color: #000;
 text-align: center;
 font-family: SUIT;
-font-size: 15px;
+font-size: 13.5px;
 font-style: normal;
 font-weight: 600;
-line-height: 20px; /* 166.667% */
+line-height: 23px; /* 166.667% */
 margin-bottom: 50vw;
 }
 
@@ -295,7 +299,7 @@ margin-bottom: 20vw;
     color: #000;
 text-align: center;
 font-family: SUIT;
-font-size: 9px;
+font-size: px;
 font-style: normal;
 font-weight: 600;
 line-height: 20px; /* 166.667% */
