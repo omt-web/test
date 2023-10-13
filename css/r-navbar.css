@@ -197,3 +197,111 @@
     color: #000000;             /* 메뉴 텍스트 색 */
     font-family: "Suit-SemiBold" ;
 }
+
+
+/*! 홈 화면 테스트  */
+
+#test_title_1 {
+    margin-left: 10vw;
+    color: #000;
+font-family: Suit-Regular;
+font-size: 30px;
+font-style: normal;
+font-weight: 900;
+line-height: 30px; /* 100% */
+margin-bottom: 20vw;
+}
+
+#test_article_1 {
+    margin-left: 10vw;
+    color: #000;
+    font-family: Pretendard-Medium;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+margin-bottom: 20vw;
+}
+
+#test_subtitle_1 {
+    margin-left: 10vw;
+
+    color: #000;
+text-align: center;
+font-family: SUIT;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 166.667% */
+margin-bottom: 50vw;
+}
+
+#test_title_2 {
+    margin-left: 10vw;
+    color: #000;
+font-family: Suit-Regular;
+font-size: 33px;
+font-style: normal;
+font-weight: 900;
+line-height: 30px; /* 100% */
+margin-bottom: 20vw;
+}
+
+#test_article_2 {
+    margin-left: 10vw;
+    color: #000;
+    font-family: Pretendard-Medium;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+margin-bottom: 20vw;
+}
+
+#test_subtitle_2 {
+    margin-left: 10vw;
+
+    color: #000;
+text-align: center;
+font-family: SUIT;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 166.667% */
+margin-bottom: 50vw;
+}
+
+#test_title_3 {
+    margin-left: 10vw;
+    color: #000;
+font-family: Suit-Regular;
+font-size: 27px;
+font-style: normal;
+font-weight: 900;
+line-height: 30px; /* 100% */
+margin-bottom: 20vw;
+}
+
+#test_article_3 {
+    margin-left: 10vw;
+    color: #000;
+    font-family: Pretendard-Medium;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+margin-bottom: 20vw;
+}
+
+#test_subtitle_3 {
+    margin-left: 10vw;
+
+    color: #000;
+text-align: center;
+font-family: SUIT;
+font-size: 9px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 166.667% */
+margin-bottom: 50vw;
+}
