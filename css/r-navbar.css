@@ -204,10 +204,9 @@
 #test_title_1 {
     margin-left: 10vw;
     color: #000;
-font-family: Suit-Regular;
+    font-family: 'Suit-Heavy'; /* 폰트 패밀리 이름  */
+    font-weight: 400;
 font-size: 30px;
-font-style: normal;
-font-weight: 900;
 line-height: 30px; /* 100% */
 margin-bottom: 20vw;
 }
@@ -215,23 +214,20 @@ margin-bottom: 20vw;
 #test_article_1 {
     margin-left: 10vw;
     color: #000;
-    font-family: Pretendard-Medium;
+    font-family: 'Pretendard-Regular'; /* 폰트 패밀리 이름  */
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 16px; /* 133.333% */
 margin-bottom: 20vw;
 }
 
 #test_subtitle_1 {
     margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: 'Suit-SemiBold'; /* 폰트 패밀리 이름  */
 
     color: #000;
 text-align: center;
-font-family: SUIT;
 font-size: 12px;
-font-style: normal;
-font-weight: 600;
 line-height: 20px; /* 166.667% */
 margin-bottom: 50vw;
 }
