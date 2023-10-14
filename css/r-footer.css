@@ -101,6 +101,36 @@ footer {
 #kakaopng, #instargrampng, #mailpng {
     margin: 0vw;
     padding-top: 2vw;
-    padding-left: 10vw;
+    padding-left: 5vw;
+    padding-right: 2vw;
     width: 6vw;
+}
+
+#footerLogo {
+    margin: 0vw;
+    width: 5vw;
+    padding-right: 5vw;
+}
+
+.footerEnd {
+    display: flex;
+    justify-content: flex-end; /* 요소를 컨테이너의 오른쪽 끝으로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-top: 0vw;
+    padding-right: 5vw;
+    
+}
+
+.hrContainer {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+}
+hr {
+
+    position: center;
+
+    width: 90vw;
 }
