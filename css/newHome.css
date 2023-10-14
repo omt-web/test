@@ -1,8 +1,10 @@
 /*! improt */
+@import url('reset.css');        /** 폰트 */
 @import url('font.css');        /** 폰트 */
 @import url('normalize.css');   /** 전범위 */
 @import url('r-navbar.css');    /** 반응형 나브 바 */
 @import url('r-footer.css');    /** 반응형 푸터 */
+
 
 /**! 반응형 상세설정 */
 @media (max-width: 480px) {     /** 모바일 화면 */
