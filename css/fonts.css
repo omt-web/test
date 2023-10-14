@@ -1,5 +1,14 @@
 /** 폰트  */
 /* SUIT */
+
+/* 영문 */
+@font-face {
+    font-family: 'Suit_Regular_eng'; /* 폰트 패밀리 이름  */
+    src: url('../fonts/eng/SUIT-Regular.otf') format('otf'),
+        url('../fonts/eng/SUIT-Regular.ttf') format('ttf');
+}
+
+
 @font-face {
     font-family: 'Suit-Bold'; /* 폰트 패밀리 이름  */
     src: url('../fonts/SUIT-Bold.otf') format('otf'),
