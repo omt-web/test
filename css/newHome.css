@@ -103,6 +103,59 @@ line-height: 30px; /* 100% */
 margin-bottom: 20vw;
 }
 
+
+
+
+
+
+
+#test_title_3 {
+    margin-left: 10vw;
+    color: #000;
+    font-family: -apple-system; /* 폰트 패밀리 이름  */
+
+font-size: 31.5px;
+font-style: normal;
+font-weight: 900;
+line-height: 30px; /* 100% */
+margin-bottom: 20vw;
+}
+
+
+#test_title_4 {
+    margin-left: 10vw;
+    color: #000;
+    font-family: BlinkMacSystemFont; /* 폰트 패밀리 이름  */
+
+font-size: 31.5px;
+font-style: normal;
+font-weight: 900;
+line-height: 30px; /* 100% */
+margin-bottom: 20vw;
+}
+
+
+#test_title_5 {
+    margin-left: 10vw;
+    color: #000;
+    font-family: Segoe UI; /* 폰트 패밀리 이름  */
+
+font-size: 31.5px;
+font-style: normal;
+font-weight: 900;
+line-height: 30px; /* 100% */
+margin-bottom: 20vw;
+}
+
+
+
+
+
+
+
+
+
+
 #test_article_2 {
     margin-left: 10vw;
     color: #000;
