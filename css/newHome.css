@@ -87,11 +87,16 @@
 }
 
 /**! home page style */
+button, html [type="button"] {
+    -webkit-appearance: none;   
+}
+
 .container {
     -webkit-appearance: none;  /* 아이폰에서 css 설정이 먹히도록 기존 설정 초기화 */
 }
 
 #test_title_2 {
+    
     margin-left: 10vw;
     color: #000;
     font-family: 'Suit-Regular'; /* 폰트 패밀리 이름  */
