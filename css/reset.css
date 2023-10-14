@@ -20,11 +20,10 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+    font:italic; /* 폰트 패밀리 이름  */
 	vertical-align: baseline;
 	vertical-align: -webkit-baseline-middle;
 	vertical-align: -moz-middle-with-baseline;
-    font-family: none ;
 }
 
 /* make sure to set some focus styles for accessibility */
