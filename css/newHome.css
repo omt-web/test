@@ -9,161 +9,32 @@
 /**! 반응형 상세설정 */
 @media (max-width: 480px) {     /** 모바일 화면 */
     /*! body  */
-    .title {
-        font-size: 35px;
-    }
 
-    .year {
-        font-size: 18px;
-    }
-
-    .subTitle {
-        font-size: 12px;
-    }
-
-    .contents {
-        font-size: 14px;
-    }
-
-    .decorate_3 {
-        font-size: 35px;
-    }
-
-    .decorate_4 {
-        font-size: 45px;
-    }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {     /**태블릿 화면 */
     /*! body  */
-    .title {
-        font-size: 55px;
-    }
 
-    .year {
-        font-size: 28px;
-    }
-
-    .subTitle {
-        font-size: 19px;
-    }
-
-    .contents {
-        font-size: 22px;
-    }
-
-    .decorate_3 {
-        font-size: 55px;
-    }
-
-    .decorate_4 {
-        font-size: 71px;
-    }
 }
 
 @media (min-width: 1025px) {     /** 데스크탑 화면 */
     /*! body  */
-    .title {
-        font-size: 75px;
-    }
 
-    .year {
-        font-size: 38px;
-    }
-
-    .subTitle {
-        font-size: 25px;
-    }
-
-    .contents {
-        font-size: 29px;
-    }
-
-    .decorate_3 {
-        font-size: 74px;
-    }
-
-    .decorate_4 {
-        font-size: 96px;
-    }
 }
 
 /**! home page style */
-
-
-#test_title_2 {
-    margin-left: 10vw;
-    color: #000;
-    font-family: 'Suit_Regular_eng'; /* 폰트 패밀리 이름  */
-
-font-size: 31.5px;
-font-style: normal;
-font-weight: 900;
-line-height: 30px; /* 100% */
-margin-bottom: 20vw;
-}
-
-
-
-
-
-#test_title_3 {
+#test_title {
     margin-left: 10vw;
     color: #000;
     font-family: -apple-system; /* 폰트 패밀리 이름  */
-font-size: 31.5px;
-font-style: normal;
-font-weight: 900;
-line-height: 30px; /* 100% */
-margin-bottom: 20vw;
+    font-size: 31.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 100% */
+    margin-bottom: 20vw;
 }
 
-#test_title_4 {
-    margin-left: 10vw;
-    color: #000;
-    font-family: -apple-system; /* 폰트 패밀리 이름  */
-
-font-size: 31.5px;
-font-style: normal;   /*! 이거로 확정 */
-font-weight: 600;
-line-height: 30px; /* 100% */
-margin-bottom: 20vw;
-}
-
-#test_title_5 {
-    margin-left: 10vw;
-    color: #000;
-    font-family: -apple-system; /* 폰트 패밀리 이름  */
-
-font-size: 31.5px;
-font-style: normal;
-font-weight: 500;
-line-height: 30px; /* 100% */
-margin-bottom: 20vw;
-}
-
-#test_title_6 {
-    margin-left: 10vw;
-    color: #000;
-    font-family: 'Suit_Regular_eng'; /* 폰트 패밀리 이름  */
-
-font-size: 31.5px;
-font-style: normal;
-font-weight: 500;
-line-height: 30px; /* 100% */
-margin-bottom: 20vw;
-}
-
-
-
-
-
-
-
-
-
-
-#test_article_2 {
+#test_article {
     margin-left: 10vw;
     color: #000;
     font-family: 'Pretendard-Regular'; /* 폰트 패밀리 이름  */
@@ -171,19 +42,17 @@ margin-bottom: 20vw;
     font-style: normal;
     font-weight: 400;
     line-height: 19px; /* 133.333% */
-margin-bottom: 20vw;
+    margin-bottom: 20vw;
 }
 
-#test_subtitle_2 {
+#test_subtitle {
     margin-left: 10vw;
-
     color: #000;
-text-align: center;
-font-family: 'Suit-SemiBold'; /* 폰트 패밀리 이름  */
-font-size: 13.5px;
-font-style: normal;
-font-weight: 600;
-line-height: 23px; /* 166.667% */
-margin-bottom: 50vw;
+    text-align: center;
+    font-family: 'Suit-SemiBold'; /* 폰트 패밀리 이름  */
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px; /* 166.667% */
+    margin-bottom: 50vw;
 }
-
