@@ -23,6 +23,37 @@
 }
 
 /**! home page style */
+
+/** video 모션 */
+#video_1 {
+    width: 100vw;
+    height: auto;
+    margin: 0vw;
+    padding: 0vw;
+    margin-top: 18vw;
+    margin-bottom: 20vw;
+}
+#video_2 {
+    width: 100vw;
+    height: auto;
+    margin: 0vw;
+    padding: 0vw;
+    margin-top: 18vw;
+    margin-bottom: 20vw;
+}
+#video_3 {
+    width: 100vw;
+    height: auto;
+    margin: 0vw;
+    padding: 0vw;
+    margin-top: 18vw;
+    margin-bottom: 20vw;
+}
+
+
+
+
+
 #test_title {
     margin-left: 10vw;
     color: #000;
@@ -56,3 +87,4 @@
     line-height: 23px; /* 166.667% */
     margin-bottom: 50vw;
 }
+
