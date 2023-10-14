@@ -27,6 +27,7 @@
 /** video 모션 */
 #video_1 {
     width: 100vw;
+    max-width: 100vw;
     height: auto;
     margin: 0vw;
     padding: 0vw;
@@ -51,40 +52,377 @@
 }
 
 
-
-
-
-#test_title {
-    margin-left: 10vw;
-    color: #000;
-    font-family: -apple-system; /* 폰트 패밀리 이름  */
-    font-size: 31.5px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px; /* 100% */
-    margin-bottom: 20vw;
+/** 가로 스크롤 이미지 */
+.scroll {
+    overflow-x: hidden; /* 가로 스크롤 막기 */
 }
 
-#test_article {
-    margin-left: 10vw;
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 0vw;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 8vw;
+}
+
+.image-container::-webkit-scrollbar {
+    height:0.8vw;
+    background-color: #A4A4A4;
+    border-radius: 100vw;
+}
+
+.image-container::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 5px;
+    max-width: 1vw;
+}
+
+.image-container img {
+    width: 35vw;
+    height: auto;
+    margin-right: 8vw;
+    padding-top: 30vw;
+}
+
+
+/** 년도 세로 */
+.year {
+    display: flex;
+    justify-content: center; /* 가로축 중앙 정렬 */
+    margin-bottom: 7vw;
+    
+}
+
+#year {
+    margin: 0px;
+    padding: 0px;
+    rotate:90deg;
     color: #000;
     font-family: 'Pretendard-Regular'; /* 폰트 패밀리 이름  */
     font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
-    line-height: 19px; /* 133.333% */
-    margin-bottom: 20vw;
+}
+
+/** 년도 직선 꾸밈선 */
+.line {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    margin-bottom: 7vw;
+}
+.v-line {
+    margin-top: 8vw;
+    margin-bottom: 0vw;
+    border-left : 0.2vw solid #000000;
+    height : 20vw;
+}
+
+/** 본문 로고 */
+.logoImg_2 {
+    margin: 0px;
+    padding: 0px;
+    width: 5vw;
+    margin-left: 47.5vw;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+
+
+/** 메인 이미지  */
+.mainImg_1 {
+    margin: 0px;
+    padding-top: 20vw;
+    padding-bottom: 8vw;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+#mainImg_1 {
+    margin: 0px;
+    padding: 0px;
+    width: 85vw;
+}
+
+.mainImg_2 {
+    width: 100vw;
+    padding-bottom: 8vw;
+}
+
+.mainImg_3 {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    margin: 0vw;
+    padding: 0vw;
+}
+
+#mainImg_3 {
+    width: 80vw;
+    padding-bottom: 4vw;
+}
+
+.mainImg_4 {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    margin: 0vw;
+    padding: 0vw;
+}
+
+#mainImg_4 {
+    width: 80vw;
+    padding-bottom: 4vw;
+}
+
+
+
+/** 박스  */
+/* 추가: 페이지 전체를 감싸는 컨테이너 */
+.boxContainer {
+    position: relative; /* 자식 요소의 절대 위치 설정을 가능하게 합니다 */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+
+.box_1 {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 90vw;
+    border: 1px solid #000;
+    justify-content: center; /* 수평 중앙 정렬 */
+    height: 10vw
+}
+
+.boxText_1 {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    /* 여백 추가 */
+}
+
+#boxText_1 {
+    color: #000;
+    font-family: 'Suit-SemiBold'; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.iconImg_1 {
+    display: flex;
+    justify-content: flex-end; /* 요소를 컨테이너의 오른쪽 끝으로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+#iconImg_1 {
+    width: 3vw;
+    padding-left: 10vw;
+}
+
+
+.box_2 {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 90vw;
+    border: 1px solid #000;
+    background-color: #000;
+    justify-content: center; /* 수평 중앙 정렬 */
+    height: 10vw
+}
+
+.boxText_2 {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    /* 여백 추가 */
+}
+
+#boxText_2 {
+    color: #ffffff;
+    font-family: 'Suit-SemiBold'; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.iconImg_2 {
+    display: flex;
+    justify-content: flex-end; /* 요소를 컨테이너의 오른쪽 끝으로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+#iconImg_2 {
+    width: 3vw;
+    padding-left: 10vw;
+}
+
+
+/** 박스 클릭시 */
+.popUpText_1 {
+    display: none; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 100;
+
+    background-color: rgba(255, 255, 255, 0.7); /* 흰색 배경에 0.7의 불투명도 */
+    color: black; /* 텍스트 색상은 검정 */
+    width: 100vw;
+    height: 30vw;
+    
+    /* 텍스트를 중앙에 배치 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popUpText_1 {
+    color: black; /* 텍스트 색상은 검정 */
+    font-family: -apple-system; 
+    font-size: 31.5px;
+    font-style: normal;
+    font-weight: 500;
+
+    /* 필요에 따라 여기에 텍스트의 스타일링을 계속 추가할 수 있습니다. */
+}
+
+.popUpText_2{
+    margin-top: 20vw;
+    display:none;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+#popUpText_2 {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+
+    margin-left: 10vw;
+    color: #000;
+    font-family: -apple-system; 
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; 
+    margin-bottom: 8vw;
+    margin-top: 0vw;
+}
+
+#popUpText_2Sub {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+
+    color: #000;
+    font-family: 'Pretendard-Regular'; 
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; 
+    margin-left: 10vw;
+
+}
+#kakaoImg_2{
+    width: 10vw;
+    margin-left: 50vw;
+}
+
+
+/** 텍스트 요소 */
+#test_title {
+    margin-left: 10vw;
+    color: #000;
+    font-family: -apple-system; 
+    font-size: 31.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; 
+    margin-bottom: 8vw;
+}
+
+#test_article {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: #000;
+    font-family: 'Pretendard-Regular'; 
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; 
+    margin-bottom: 5vw;
 }
 
 #test_subtitle {
     margin-left: 10vw;
+    margin-right: 10vw;
     color: #000;
     text-align: center;
-    font-family: 'Suit-SemiBold'; /* 폰트 패밀리 이름  */
+    font-family: 'Suit-SemiBold'; 
     font-size: 13.5px;
     font-style: normal;
     font-weight: 600;
-    line-height: 23px; /* 166.667% */
+    line-height: 23px; 
     margin-bottom: 50vw;
 }
 
+#scoll-info{
+    color: #000;
+    font-family: 'Pretendard-Regular'; 
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10vw;
+    margin-bottom: 20vw;
+}
+
+#test_subtitle_2 {
+    margin-left: 10vw;
+    color: #000;
+    font-family: 'Suit-SemiBold'; 
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px; 
+    margin-bottom: 3vw;
+}
+
+#imgInfo {
+    color: #000;
+    font-family: 'Suit-SemiBold'; 
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    margin-bottom: 1vw;
+}
+
+.imgInfo_1 {
+    display: flex;
+    justify-content: left; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    margin-left: 10vw;
+
+}
+
+.imgInfo_2 {
+    display: flex;
+    justify-content: right; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    margin-right: 10vw;
+}
+
+.imgInfoContainer {
+    display: flex;
+    justify-content: space-between; /* or space-around, center, flex-start, flex-end 등 */
+}
