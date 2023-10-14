@@ -27,10 +27,10 @@
     
     #nav-icon {                     /* 나브 아이콘  */
         cursor: pointer;
-        width: 28px;
+        width: 23px;
         float: right;
         margin-right: 3.5vw;
-        margin-top: 1.5vw;
+        margin-top: 2vw;
     }
 
     .menu > li {
