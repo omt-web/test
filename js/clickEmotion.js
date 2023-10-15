@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-// DOM이 완전히 로드된 후 스크립트 실행
+//* 박스 클릭시 이모션
 document.addEventListener('DOMContentLoaded', function() {
   // 클릭 이벤트 리스너를 allBoxContainer에 추가
   document.querySelector('.allBoxContainer').addEventListener('click', function() {
