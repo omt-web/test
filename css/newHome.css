@@ -1,7 +1,7 @@
 /*! improt */
-@import url('./apple-reset.css');        /** 폰트 */
+@import url('./apple-reset.css');        /** 애플 기종 초기화 */
 @import url('font.css');        /** 폰트 */
-@import url('normalize.css');   /** 전범위 */
+@import url('normalize.css');   /** 전범위 초기화 */
 @import url('r-navbar.css');    /** 반응형 나브 바 */
 @import url('r-footer.css');    /** 반응형 푸터 */
 
@@ -9,17 +9,176 @@
 /**! 반응형 상세설정 */
 @media (max-width: 480px) {     /** 모바일 화면 */
     /*! body  */
+    #year {
+        font-size: 13.5px;
+    }
 
+    #boxText_1 {
+        font-size: 18px;
+    }
+
+    #popUpText_1 {
+        font-size: 31.5px;
+    }
+
+    #popUpText_2 {
+        font-size: 15px;
+    }
+
+    #boxText_2 {
+        font-size: 18px;
+    }
+
+    #popUpText_2Sub {
+        font-size: 9px;
+        line-height: 19px; 
+    }
+
+    #test_title {
+        font-size: 31.5px;
+        line-height: 30px; 
+    }
+
+    #test_article {
+        font-size: 13.5px;
+        line-height: 19px; 
+    }
+    
+    #test_subtitle {
+        font-size: 13.5px;
+        line-height: 23px; 
+    }
+    
+    #scoll-info{
+        font-size: 13.5px;
+        line-height: 19px;
+    }
+    
+    #test_subtitle_2 {
+        font-size: 13.5px;
+        line-height: 23px; 
+    }
+    
+    #imgInfo {
+        font-size: 13.5px;
+        line-height: 23px; 
+    }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {     /**태블릿 화면 */
     /*! body  */
+    #year {
+        font-size: 21.05px;
+    }
 
+    #boxText_1 {
+        font-size: 28.07px;
+    }
+
+    #popUpText_1 {
+        font-size: 49.26px;
+    }
+
+    #popUpText_2 {
+        font-size: 18.75px;
+    }
+
+    #boxText_2 {
+        font-size: 28.07px;
+    }
+
+    #popUpText_2Sub {
+        font-size: 11.25px;
+        line-height: 22.5px; 
+    }
+
+    #test_title {
+        font-size: 49.26px;
+        line-height: 47px; 
+    }
+
+    #test_article {
+        font-size: 21.05px;
+        line-height: 29.733p; 
+    }
+    
+    #test_subtitle {
+        font-size: 21.05px;
+        line-height:29.733p; 
+    }
+    
+    #scoll-info{
+        font-size: 21.05px;
+        line-height: 29.733p;
+    }
+    
+    #test_subtitle_2 {
+        font-size: 21.05px;
+        line-height:  36.83px; 
+    }
+    
+    #imgInfo {
+        font-size: 21.05px;
+        line-height:  36.83px; 
+    }
 }
 
 @media (min-width: 1025px) {     /** 데스크탑 화면 */
     /*! body  */
+    #year {
+        font-size: 36.0px;
+    }
 
+    #boxText_1 {
+        font-size: 48.0px;
+    }
+
+    #popUpText_1 {
+        font-size: 84.0px;
+    }
+
+    #popUpText_2 {
+        font-size: 40.0px;
+    }
+
+    #boxText_2 {
+        font-size: 148.0px;
+    }
+
+    #popUpText_2Sub {
+        font-size: 24.0px;
+        line-height: 50.7px; 
+    }
+
+    #test_title {
+        font-size: 84.0px;
+        line-height: 80.0px; 
+    }
+
+    #test_article {
+        font-size: 36.0px;
+        line-height: 50.7px; 
+    }
+    
+    #test_subtitle {
+        font-size: 36.0px;
+        line-height: 61.3px; 
+    }
+    
+    #scoll-info{
+        font-size: 36.0px;
+        line-height: 50.7px;
+    }
+    
+    #test_subtitle_2 {
+        font-size: 36.0px;
+        line-height: 61.3px; 
+    }
+    
+    #imgInfo {
+        font-size: 36.0px;
+        line-height: 61.3px; 
+    }
 }
 
 /**! home page style */
@@ -65,7 +224,7 @@
     scroll-snap-type: x mandatory;
     padding: 0vw;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 10vw;
     padding-bottom: 8vw;
 }
 
@@ -77,7 +236,7 @@
 
 .image-container::-webkit-scrollbar-thumb {
     background-color: #000000;
-    border-radius: 5px;
+    border-radius: 5vw;
     max-width: 1vw;
 }
 
@@ -94,16 +253,14 @@
     display: flex;
     justify-content: center; /* 가로축 중앙 정렬 */
     margin-bottom: 7vw;
-    
 }
 
 #year {
-    margin: 0px;
-    padding: 0px;
+    margin: 0vw;
+    padding: 0vw;
     rotate:90deg;
     color: #000;
     font-family: 'Pretendard-Regular'; /* 폰트 패밀리 이름  */
-    font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
 }
@@ -124,8 +281,8 @@
 
 /** 본문 로고 */
 .logoImg_2 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0vw;
+    padding: 0vw;
     width: 5vw;
     margin-left: 47.5vw;
     display: flex;
@@ -134,10 +291,9 @@
 }
 
 
-
 /** 메인 이미지  */
 .mainImg_1 {
-    margin: 0px;
+    margin: 0vw;
     padding-top: 20vw;
     padding-bottom: 8vw;
     display: flex;
@@ -145,8 +301,8 @@
 }
 
 #mainImg_1 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0vw;
+    padding: 0vw;
     width: 85vw;
 }
 
@@ -180,12 +336,10 @@
 }
 
 
-
 /** 박스  */
 /* 추가: 페이지 전체를 감싸는 컨테이너 */
 .boxContainer {
     position: relative; /* 자식 요소의 절대 위치 설정을 가능하게 합니다 */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,7 +350,7 @@
     display: flex;
     align-items: center; /* 수직 중앙 정렬 */
     width: 90vw;
-    border: 1px solid #000;
+    border: 0.5vw solid #000;
     justify-content: center; /* 수평 중앙 정렬 */
     height: 10vw
 }
@@ -205,13 +359,11 @@
     display: flex;
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
-    /* 여백 추가 */
 }
 
 #boxText_1 {
     color: #000;
     font-family: 'Suit-SemiBold'; 
-    font-size: 18px;
     font-style: normal;
     font-weight: 600;
 }
@@ -232,7 +384,7 @@
     display: flex;
     align-items: center; /* 수직 중앙 정렬 */
     width: 90vw;
-    border: 1px solid #000;
+    border: 0.5vw solid #000;
     background-color: #000;
     justify-content: center; /* 수평 중앙 정렬 */
     height: 10vw
@@ -242,13 +394,11 @@
     display: flex;
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
-    /* 여백 추가 */
 }
 
 #boxText_2 {
     color: #ffffff;
     font-family: 'Suit-SemiBold'; 
-    font-size: 18px;
     font-style: normal;
     font-weight: 600;
 }
@@ -273,14 +423,10 @@
     left: 50%;
     transform: translate(-50%, -50%); 
     z-index: 100;
-
     background-color: rgba(255, 255, 255, 0.7); /* 흰색 배경에 0.7의 불투명도 */
     color: black; /* 텍스트 색상은 검정 */
     width: 100vw;
     height: 30vw;
-    
-    /* 텍스트를 중앙에 배치 */
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -288,11 +434,8 @@
 #popUpText_1 {
     color: black; /* 텍스트 색상은 검정 */
     font-family: -apple-system; 
-    font-size: 31.5px;
     font-style: normal;
     font-weight: 500;
-
-    /* 필요에 따라 여기에 텍스트의 스타일링을 계속 추가할 수 있습니다. */
 }
 
 .popUpText_2{
@@ -305,14 +448,11 @@
 #popUpText_2 {
     display: flex;
     align-items: center; /* 수직 중앙 정렬 */
-
     margin-left: 10vw;
     color: #000;
     font-family: -apple-system; 
-    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 18px; 
     margin-bottom: 8vw;
     margin-top: 0vw;
 }
@@ -320,16 +460,13 @@
 #popUpText_2Sub {
     display: flex;
     align-items: center; /* 수직 중앙 정렬 */
-
     color: #000;
     font-family: 'Pretendard-Regular'; 
-    font-size: 9px;
     font-style: normal;
     font-weight: 400;
-    line-height: 19px; 
     margin-left: 10vw;
-
 }
+
 #kakaoImg_2{
     width: 10vw;
     margin-left: 50vw;
@@ -341,10 +478,8 @@
     margin-left: 10vw;
     color: #000;
     font-family: -apple-system; 
-    font-size: 31.5px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px; 
     margin-bottom: 8vw;
 }
 
@@ -353,10 +488,8 @@
     margin-right: 10vw;
     color: #000;
     font-family: 'Pretendard-Regular'; 
-    font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
-    line-height: 19px; 
     margin-bottom: 5vw;
 }
 
@@ -366,20 +499,16 @@
     color: #000;
     text-align: center;
     font-family: 'Suit-SemiBold'; 
-    font-size: 13.5px;
     font-style: normal;
     font-weight: 600;
-    line-height: 23px; 
     margin-bottom: 50vw;
 }
 
 #scoll-info{
     color: #000;
     font-family: 'Pretendard-Regular'; 
-    font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
-    line-height: 19px;
     display: flex;
     justify-content: center; 
     margin-top: 10vw;
@@ -390,20 +519,16 @@
     margin-left: 10vw;
     color: #000;
     font-family: 'Suit-SemiBold'; 
-    font-size: 13.5px;
     font-style: normal;
     font-weight: 600;
-    line-height: 23px; 
     margin-bottom: 3vw;
 }
 
 #imgInfo {
     color: #000;
     font-family: 'Suit-SemiBold'; 
-    font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px; 
     margin-bottom: 1vw;
 }
 
