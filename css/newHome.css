@@ -481,8 +481,8 @@
 
 #kakaoImg_2{
     width: 10vw;
-    margin-left: 50vw;
-    margin-top: 10vw
+    margin-top: 10vw;
+    margin: 0 auto; /* 새로 추가된 부분: 요소를 중앙 정렬합니다 */
 }
 
 
