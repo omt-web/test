@@ -253,6 +253,9 @@
     display: flex;
     justify-content: center; /* 가로축 중앙 정렬 */
     margin-bottom: 7vw;
+    font-family: -apple-system; 
+    font-style: normal;
+    font-weight: 500;
 }
 
 #year {
@@ -511,7 +514,7 @@
 
 #scoll-info{
     color: #000;
-    font-family: 'Pretendard-Regular'; 
+    font-family: 'Pretendard-Regular', -apple-system; 
     font-style: normal;
     font-weight: 400;
     display: flex;
@@ -531,7 +534,7 @@
 
 #imgInfo {
     color: #000;
-    font-family: 'Suit-SemiBold'; 
+    font-family: 'Suit-SemiBold', -apple-system; 
     font-style: normal;
     font-weight: 400;
     margin-bottom: 1vw;
@@ -555,4 +558,10 @@
 .imgInfoContainer {
     display: flex;
     justify-content: space-between; /* or space-around, center, flex-start, flex-end 등 */
+}
+
+.boxContainer p {
+    font-family: -apple-system; 
+    font-style: normal;
+    font-weight: 500;
 }
