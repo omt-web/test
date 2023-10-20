@@ -30,7 +30,7 @@
     }
 
     #popUpText_2Sub {
-        font-size: 9px;
+        font-size: 12px;
         line-height: 19px; 
     }
 
@@ -88,7 +88,7 @@
     }
 
     #popUpText_2Sub {
-        font-size: 11.25px;
+        font-size: 15px;
         line-height: 22.5px; 
     }
 
@@ -146,7 +146,7 @@
     }
 
     #popUpText_2Sub {
-        font-size: 24.0px;
+        font-size: 30.0px;
         line-height: 50.7px; 
     }
 
@@ -452,10 +452,10 @@
     display:none;
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
-
 }
 
 #popUpText_2 {
+    width: 70vw;
     display: flex;
     align-items: center; /* 수직 중앙 정렬 */
     margin-left: 10vw;
@@ -466,7 +466,6 @@
     margin-bottom: 8vw;
     margin-top: 0vw;
     margin-left: 20vw;
-
 }
 
 #popUpText_2Sub {
