@@ -68,7 +68,7 @@ footer {
 #invite, #info {
     padding-left: 5vw;
     padding-bottom: 8vw;
-    font-family: 'Suit-ExtraBold';
+    font-family: 'Suit-ExtraBold', -apple-system;
     font-weight: bold; 
 }
 
@@ -91,7 +91,7 @@ footer {
 
 #kakoURL, #instargramURL, #mailURL {
     color: #000000;
-    font-family: 'Suit-ExtraLight';
+    font-family: 'Suit-ExtraLight', -apple-system;
 }
 
 .info {
