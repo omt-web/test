@@ -452,30 +452,31 @@
     display:none;
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
+    text-align: center; /*  텍스트를 중앙 정렬합니다 */
+
 }
 
 #popUpText_2 {
     width: 70vw;
     display: flex;
     align-items: center; /* 수직 중앙 정렬 */
-    margin-left: 10vw;
+    margin: 0 auto; /* 새로 추가된 부분: 요소를 중앙 정렬합니다 */
     color: #000;
     font-family: -apple-system; 
     font-style: normal;
     font-weight: 500;
     margin-bottom: 8vw;
-    margin-top: 0vw;
-    margin-left: 20vw;
 }
 
 #popUpText_2Sub {
-    align-items: center; /* 수직 중앙 정렬 */
+    display: block; /* 새로 추가된 부분: 요소를 블록 수준으로 만듭니다. 이렇게 하면 텍스트가 자신의 줄에 표시됩니다. */
     color: #000;
     font-family: 'Pretendard-Regular', -apple-system; 
     font-style: normal;
     font-weight: 400;
-    margin-left: 10vw;
     margin-bottom: 10wv;
+    margin: 0 auto; /* 새로 추가된 부분: 요소를 중앙 정렬합니다 */
+
 }
 
 #kakaoImg_2{
