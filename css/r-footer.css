@@ -1,6 +1,7 @@
 /**! improt */
 @import url('font.css');        /** 폰트 */
 @import url('normalize.css');   /** 전범위 */
+@import url('./apple-reset.css');        /** 애플 기종 초기화 */
 
 /**! 반응형 푸터 */
 @media (max-width: 480px) {     /** 모바일 화면 */
@@ -138,6 +139,18 @@ hr {
 
 #footerText {
     color: black; /* 텍스트 색상은 검정 */
+    font-family: -apple-system; 
+    font-style: normal;
+    font-weight: 500;
+}
+
+.info p {
+    font-family: -apple-system; 
+    font-style: normal;
+    font-weight: 800;
+}
+
+.info a {
     font-family: -apple-system; 
     font-style: normal;
     font-weight: 500;
