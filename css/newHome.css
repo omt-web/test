@@ -263,7 +263,7 @@
     padding: 0vw;
     rotate:90deg;
     color: #000;
-    font-family: 'Pretendard-Regular'; /* 폰트 패밀리 이름  */
+    font-family: 'Pretendard-Regular', -apple-system; /* 폰트 패밀리 이름  */
     font-style: normal;
     font-weight: 400;
 }
@@ -371,7 +371,7 @@
 
 #boxText_1 {
     color: #000;
-    font-family: 'Suit-SemiBold'; 
+    font-family: 'Suit-SemiBold', -apple-system; 
     font-style: normal;
     font-weight: 600;
 }
@@ -406,7 +406,7 @@
 
 #boxText_2 {
     color: #ffffff;
-    font-family: 'Suit-SemiBold'; 
+    font-family: 'Suit-SemiBold', -apple-system; 
     font-style: normal;
     font-weight: 600;
 }
@@ -444,6 +444,7 @@
     font-family: -apple-system; 
     font-style: normal;
     font-weight: 500;
+    
 }
 
 .popUpText_2{
@@ -451,6 +452,7 @@
     display:none;
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
+
 }
 
 #popUpText_2 {
@@ -463,21 +465,24 @@
     font-weight: 500;
     margin-bottom: 8vw;
     margin-top: 0vw;
+    margin-left: 20vw;
+
 }
 
 #popUpText_2Sub {
-    display: flex;
     align-items: center; /* 수직 중앙 정렬 */
     color: #000;
-    font-family: 'Pretendard-Regular'; 
+    font-family: 'Pretendard-Regular', -apple-system; 
     font-style: normal;
     font-weight: 400;
     margin-left: 10vw;
+    margin-bottom: 10wv;
 }
 
 #kakaoImg_2{
     width: 10vw;
     margin-left: 50vw;
+    margin-top: 10vw
 }
 
 
@@ -495,7 +500,7 @@
     margin-left: 10vw;
     margin-right: 10vw;
     color: #000;
-    font-family: 'Pretendard-Regular'; 
+    font-family: 'Pretendard-Regular', -apple-system; 
     font-style: normal;
     font-weight: 400;
     margin-bottom: 5vw;
@@ -526,7 +531,7 @@
 #test_subtitle_2 {
     margin-left: 10vw;
     color: #000;
-    font-family: 'Suit-SemiBold'; 
+    font-family: 'Suit-SemiBold', -apple-system; 
     font-style: normal;
     font-weight: 600;
     margin-bottom: 3vw;
