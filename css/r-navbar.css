@@ -1,7 +1,7 @@
 /**! improt */
 @import url('font.css');        /** 폰트 */
 @import url('normalize.css');   /** 전범위 */
-@import url('./apple-reset.css');        /** 애플 기종 초기화 */
+@import url('apple-reset.css');        /** 애플 기종 초기화 */
 
 
 /**! 반응형 나브바 */
