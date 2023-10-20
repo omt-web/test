@@ -118,7 +118,10 @@ footer {
     align-items: center; /* 수직 중앙 정렬 */
     margin-top: 0vw;
     padding-right: 5vw;
-    
+    color: #000;
+    font-family: 'Pretendard-Regular'; 
+    font-style: normal;
+    font-weight: 400;
 }
 
 .hrContainer {
@@ -129,8 +132,13 @@ footer {
     margin-bottom: 5vw;
 }
 hr {
-
     position: center;
-
     width: 90vw;
+}
+
+#footerText {
+    color: black; /* 텍스트 색상은 검정 */
+    font-family: -apple-system; 
+    font-style: normal;
+    font-weight: 500;
 }

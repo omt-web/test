@@ -161,6 +161,10 @@
     background-color: transparent;
     margin-top: 2vw;
     padding-right: 3vw;
+    color: black; /* 텍스트 색상은 검정 */
+    font-family: -apple-system; 
+    font-style: normal;
+    font-weight: 500;
 }
 
 #nav-icon {                     /* 나브 아이콘  */
