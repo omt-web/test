@@ -343,15 +343,36 @@
     padding-bottom: 4vw;
 }
 
+/* * 영상 */
+.iframeVideo {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 화면 스크롤 방지 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw; /* 화면 전체 높이에 가운데 정렬 */
+}
+#iframeVideo {
+    width: 80vw;
+    height: 75vh; /* 뷰포트 높이에 맞게 설정 */
+    border: none; /* 프레임 테두리 제거 */
+    margin-bottom: 10vw;;
+    padding: 0;
+}
 
 /** 박스  */
 /* 추가: 페이지 전체를 감싸는 컨테이너 */
 .boxContainer {
+    
     position: relative; /* 자식 요소의 절대 위치 설정을 가능하게 합니다 */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 2vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 화면 스크롤 방지 */
 }
 
 .box_1 {
