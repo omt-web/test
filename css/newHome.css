@@ -511,7 +511,7 @@
     margin-right: 10vw;
     color: #000;
     text-align: center;
-    font-family: 'Suit-SemiBold'; 
+    font-family: 'Suit-SemiBold', -apple-system; 
     font-style: normal;
     font-weight: 600;
     margin-bottom: 50vw;
