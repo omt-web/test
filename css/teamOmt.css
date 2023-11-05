@@ -88,74 +88,6 @@
 
 
 
-/** 가로 스크롤 이미지 */
-.scroll {
-    overflow-x: hidden; /* 가로 스크롤 막기 */
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    padding: 0vw;
-    background-color: white;
-    border-radius: 10vw;
-    padding-bottom: 8vw;
-}
-
-.image-container::-webkit-scrollbar {
-    height:0.8vw;
-    background-color: #A4A4A4;
-    border-radius: 100vw;
-}
-
-.image-container::-webkit-scrollbar-thumb {
-    background-color: #000000;
-    border-radius: 5vw;
-    max-width: 1vw;
-}
-
-.image-container img {
-    width: 35vw;
-    height: 50vw;
-    margin-right: 8vw;
-    padding-top: 30vw;
-}
-
-
-/** 년도 세로 */
-.year {
-    display: flex;
-    justify-content: center; /* 가로축 중앙 정렬 */
-    margin-bottom: 7vw;
-    font-family: -apple-system; 
-    font-style: normal;
-    font-weight: 500;
-}
-
-#year {
-    margin: 0vw;
-    padding: 0vw;
-    rotate:90deg;
-    color: #000;
-    font-family: 'Pretendard-Regular', -apple-system; /* 폰트 패밀리 이름  */
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-/** 본문 로고 */
-.logoImg_2 {
-    margin: 0vw;
-    padding: 0vw;
-    width: 5vw;
-    margin-left: 47.5vw;
-    display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
-    align-items: center; /* 수직 가운데 정렬 */
-}
 
 
 /** 메인 이미지  */
@@ -170,92 +102,44 @@
 #mainImg_1 {
     margin: 0vw;
     padding: 0vw;
-    width: 85vw;
+    width: 15vw;
+    padding: 0vw;
+
 }
 
-.mainImg_2 {
-    margin-left: 10vw;
-
+/* *  */
+.groupBox {
     display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
-    width: 85vw;
-    padding-top: 20vw;
-    padding-bottom: 8vw;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 50vw;
 }
 
-.mainImg_3 {
-    display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
+.textBox {
     margin: 0vw;
     padding: 0vw;
 }
 
-#mainImg_3 {
-    width: 80vw;
-    padding-bottom: 4vw;
-}
-
-.mainImg_4 {
-    display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
-    margin: 0vw;
+.textBox > #test_subtitle_2,
+.textBox > #test_article  {
+    margin: 0vw 0vw 2vw 10vw;
     padding: 0vw;
 }
 
-#mainImg_4 {
-    width: 80vw;
-    padding-bottom: 4vw;
-}
 
-
-
-/** 박스  */
-/* 추가: 페이지 전체를 감싸는 컨테이너 */
+/* * 각진 박스 */
 .boxContainer {
-    
     position: relative; /* 자식 요소의 절대 위치 설정을 가능하게 합니다 */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 2vw;
-    margin: 0;
+    margin-top: 80vw;
     padding: 0;
     overflow: hidden; /* 화면 스크롤 방지 */
 }
-
-.box_1 {
-    display: flex;
-    align-items: center; /* 수직 중앙 정렬 */
-    width: 90vw;
-    border: 0.5vw solid #000;
-    justify-content: center; /* 수평 중앙 정렬 */
-    height: 10vw
-}
-
-.boxText_1 {
-    display: flex;
-    justify-content: center; /* 수평 중앙 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-}
-
-#boxText_1 {
-    color: #000;
-    font-family: 'Suit-SemiBold', -apple-system; 
-    font-style: normal;
-    font-weight: 600;
-}
-
-.iconImg_1 {
-    display: flex;
-    justify-content: flex-end; /* 요소를 컨테이너의 오른쪽 끝으로 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-}
-
-#iconImg_1 {
-    width: 3vw;
-    padding-left: 10vw;
-}
-
 
 .box_2 {
     display: flex;
@@ -293,8 +177,11 @@
 
 
 
+
+
 /** 텍스트 요소 */
 #test_title {
+    margin-top: 50vw;
     margin-left: 10vw;
     color: #000;
     font-family: -apple-system; 
