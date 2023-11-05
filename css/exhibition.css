@@ -363,7 +363,7 @@
 
 /* * 이미지  */
 .mainImg_1 {
-    margin-top: 20vw 0vw 30vw 0vw;
+    margin: 20vw 0vw 30vw 0vw;
     width: 100vw;
     height: auto;
     padding-bottom: 5vw;
