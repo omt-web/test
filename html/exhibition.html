@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../css/exhibition.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../js/navbar.js"></script>
-        <script src="../js/aboutOmt.js"></script>
+        <script src="../js/exhibition_accordian.js"></script>
         <title>exhibition</title>
     </head>
     <body>
@@ -20,322 +20,353 @@
                                 <img src="../src/navicon.png" alt="나브 아이콘" id="nav-icon">
                             </div>
                             <ul class="nav-menu" id="nav-menu">
-                                <li><a href="../html/home.html">Ornament</a></li>
+                                <li><a href="../html/newHome.html">Ornament</a></li>
                                 <li><a href="../html/exhibition.html">Exhibition</a></li>
-                                <li><a href="../html/aboutUs.html">About Us</a></li>
+                                <li><a href="#l">Participate</a></li>
+                                <li><a href="#">Team omt.</a></li>
+                                <li><a href="#">FAQ</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
             </header>
+            <br><br><br><br><br><br>
 
-            <body>
-                <p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <img src="../src/Exhibition/10.png" alt="mainImg_1" class="mainImg_1">
+
+            <p id="title">Exhibition Overview</p>
+
+            <p id="subtitle01">omt.ornament</p>
+
+            <p id="contents">
+                안녕하세요 프로젝트 브랜드 오너먼트입니다. 
+                저희는 여러분과 함께하는 전시를 기획하고 있습니다. 
+                참가 작가들과 관람객 그리고 그 영향을 받을 수많은 사람들까지, 
+                각자 경험을 제공하고, 그 경험을 순환시킬 수 있는 장을 만들어 주는 것을 목적으로 합니다. 
+                <br> <br> <br>
+                우리는 4학년입니다. 이제 곧 졸업을하죠. 
+                졸업 작품을 만들었구요, 졸업작품을 만들때 참 다사다난 했어요. 
+                돈도 시간도 노력도 아주 많이 들었죠. 교수님 눈치도 좀 보고요. 
+                그리고 그 결과물은 길어야 일주일 정도 하고 끝나죠.
+            </p>
+
+            <img src="../src/Exhibition/11.png" alt="mainImg_2" class="mainImg_1">
+
+            <div class="subtitleContainer">
+                <p id="contents">
+                    We’re project brand <br> omt.ornament
+                </p>
+    
+                <p id="contents">
+                    Exhibition <br> background
+                </p>
+            </div>
+
+            <p id="contents">
+                대부분의 졸업전시는 결과물 위주의 이야기를 하고 있습니다. 
+                작품을 이야기하는데 가장 중요한건 ‘과정’이라고 생각해요. 
+                과정의 공유는 우리가 경험한 것들을 더욱 많이, 그리고 잘 보여줄 수 있습니다. 
+                <br> <br> <br>
+                졸업 작품을 만들어 내기까지 작품에는 보여지지 않는 많은 과정이 있었다는걸 알고 있어요. 
+                여러분의 과정을 졸업작품을 매개로 다양한 관람객에게 공유해주세요. 
+                우리의 경험은 관람객의 경험이 되고, 그 관람객들의 경험은 다시 우리의 경험으로 돌아올 거예요.
+            </p>
+
+            <!-- * 가로줄  -->
+            <div class="line_box">
+                <div class="line"></div>
+            </div>
+                
+            <div class="target">
+                <p id="title">Target</p>
+
+                <p id="contents">
+                    우리의 타겟은 작가, 관람객, 그리고 영향을 받을 많은 사람들입니다.
+                    <br>
+                    각 개인이 공유한 경험은 서로에게 순환됩니다.
+                </p>
+            </div>
+
+            <!--* 아코디언 버튼 및 패널 -->
+            <div class="accordion" onclick="togglePanel('panel1')">
+                <img src="../src/Exhibition/12.png" alt="accordionImg" class="accordionImg">
+            </div>
+
+            <div class="panel" id="panel1">
+                <p id="subtitle03">01</p>
+
+                <img src="../src/Exhibition/13.png" alt="mainImg_3" class="mainImg_3">
+
+                <p id="subtitle02">
+                    1. 작품 과정 회고 및 가치관 강화
                 </p>
 
-                <p class="title">전시 개요</p>
+                <p id="contents">
+                    <br>
+                    사회에 나가기 전 본인의 가치관을 다시 한번 구축하는 것은 
+                    디자이너로서의 활동에 있어 중요한 양분이 됩니다. 
+                    <br><br>
+                    제3자에게 참가자의 생각을 전달하기 위한 이 작업은, 
+                    작품의 과정을 다시 한번 돌아보며 본인의 작업 가치관과 생각을 공고히 하고 
+                    앞으로 본인의 작업에 대한 주장을 연습할 수 있는 계기가 됩니다.
+                    <br><br>
+                </p>
 
-                <div class="exhibit-bg">
-                    <div class="toggle-section">
-                        <div class="content">
-                            <p class="subTitle">전시 배경</p>
-                            <p class="article1">
-                                안녕하세요 프로젝트 브랜드 오너먼트입니다.
-                                저희는 여러분과 함께하는 전시를 기획하고 있습니다.
-                                참가 작가들과 관람객 그리고 그 영향을 받을 수많은 사람들까지, 각자 경험을 제공하고, 
-                                그 경험을 순환시킬 수 있는 장을 만들어 주는 것을 목적으로 합니다.
-                                
-                                <br> <br> <br>
-                                우리는 4학년입니다. 이제 곧 졸업을하죠. 졸업 작품을 만들었구요,
-                                졸업작품을 만들때 참 다사다난 했어요. 돈도 시간도 노력도 아주 많이 들었죠. 교수님 눈치도 좀 보고요. 
-                                그리고 그 결과물은 길어야 일주일 정도 하고 끝나죠.
-                            </p>
-                            <p id="article2">
-                                <br> <br> <br>
-                                대부분의 졸업전시는 학교 이름 아래 결과물 위주의 이야기를 하고 있습니다,
-                                작품을 이야기하는데 가장 중요한건 ‘과정’이라고 생각해요.
-                                과정의 공유는 우리가 경험한 것들을 더욱 많이, 그리고 잘 보여줄 수 있습니다.
-                                졸업 작품을 만들어 내기까지 작품에는 보여지지 않는 많은 과정이 있었다는걸 알고 있어요,
-                            </p>   
-                            <p id="article3">
-                                <br> <br> <br>
-                                여러분의 과정을 졸업작품을 매개로 다양한 관람객에게 공유해주세요.
-                                우리의 경험은 관람객의 경험이 되고, 그 관람객들의 경험은 다시 우리의 경험으로 돌아올 거예요.                           
-                            </p>
+                <p id="subtitle02">
+                    2.다양한 관점 경험
+                </p>
 
-                            
-                            <p class="year">2023</p>
-                            
-                            <div class="decorate_3">
-                                <div class='v-line'></div>
-                            </div>
+                <p id="contents">
+                    <br>
+                    나와 다른 시각을 경험하는 것은, 이후 다른 작업의 밑거름이 되어 줍니다. 
+                    제 3자의 작품을 통해 작품을 보는 다양한 관점을 경험할 수 있습니다.
+                    <br><br>
+                </p>
 
-                            <p id="article4">
-                                주요 타겟
-                            </p>
+                <div class="subtitle02Box">
+                    <p id="subtitle03">02</p>
+                    <p id="subtitle03">참가자</p>
+                </div>
+                
 
-                            <p id="article5">
-                                우리의 타겟은 작가, 관람객, 그리고 영향을 받을 많은 사람들 입니다.  
-                                각 개인이 공유한 경험은 서로에게 순환됩니다.
-                            </p>
+                <img src="../src/Exhibition/14.png" alt="mainImg_4" class="mainImg_3">
 
-                            <hr>
+                <p id="subtitle02">
+                    1. ’과정’ 이해와 사고의 폭 확장
+                </p>
 
-                            <p id="article-No">
-                                01
-                            </p>
+                <p id="contents">
+                    <br>
+                    타인의 작업과정은 개인의 작업을 더욱 깊고 다양한 시점에서 볼 수 있게 해줍니다.
+                    전시된 작품(결과물)이 도출되기 까지의 ‘과정’을 접하고 이해하며 사고의 폭을 넓힐 수 있습니다.
+                    <br><br>
+                </p>
 
-                            <p id="article-title">
-                                참가자
-                            </p>
+                <p id="subtitle02">
+                    2.가치관 재고
+                </p>
 
-                            <p id="article-bold">
-                                1. 작품의 과정을 다시 한번 돌아보며 작가 본인의 작업 가치관과 생각을 공고히 합니다
-                            </p>
+                <p id="contents">
+                    <br>
+                    타인의 작업에 대한 피드백을 위해 
+                    본인의 가치관에 대해 한번 더 생각해 볼 수 있습니다.
+                    <br><br>
+                </p>
 
-                            <p id="article-normal">
-                                사회에 나가기 전 본인의 가치관을 다시 한번 구축하는 것은 작가로서, 
-                                디자이너로서의 활동에 있어 중요한 양분이 됩니다.  
-                            </p>
+                <p id="subtitle02">
+                    3. 미대 입시생(중/고등학생)에게 <br>진학을 위한 가이드 역할
+                </p>
 
-                            <p id="article-normal">
-                                제3자에게 작가의 생각을 전달하기 위한 이 작업은, 
-                                앞으로 본인의 작업에 대한 주장을 연습할 수 있는 계기가 됩니다.
-                            </p>
+                <p id="contents">
+                    <br>
+                    많은 입시생은 실질적 정보의 부족으로 전공선택에 어려움을 겪고 있습니다. 
+                    본 전시는 미대 입시생(중/고등학생)에게 전공 선택과 진학을 위한 가이드가 되어줍니다.
+                    <br><br>
+                </p>
 
-                            <p id="article-bold">
-                                2. 제3자의 피드백을 통해 작품을 보는 다양한 관점을 경험할 수 있습니다
-                            </p>
+                <p id="subtitle03_1">관람객</p>
 
-                            <p id="article-normal">
-                                나와 다른 시각을 경험하는 것은, 이후 다른 작업의 밑거름이 되어 줍니다.
-                            </p>
+                <div class="subtitle03Box">
+                    <p id="subtitle03">03</p>
+                    <p id="subtitle03">영향을 받을 많은 사람들</p>
+                </div>
+                
 
-                            <hr>
+                <img src="../src/Exhibition/15.png" alt="mainImg_5" class="mainImg_3">
 
-                            <p id="article-No">
-                                02
-                            </p>
+                <p id="subtitle02">
+                    1. 2차 공유와 순환 발생
+                </p>
 
-                            <p id="article-title">
-                                관람객
-                            </p>
+                <p id="contents">
+                    <br>
+                    관람객들의 ‘바이럴’, ‘전시 관람 경험이 미친 영향을 바탕으로 한 작업’은 통해 
+                    또 다른 사람들에게 2차 공유와 순환이 발생합니다.
+                    <br><br>
+                </p>
 
-                            <p id="article-bold">
-                                1.
-                                전시된 작품(결과물)이 도출되기 까지의 ‘과정’을 접하고 이해하며 사고의 폭을 넓힐 수 있습니다                            
-                            </p>
+                <p id="subtitle02">
+                    2. 경험의 공유와 순환
+                </p>
 
-                            <p id="article-normal">
-                                타인의 작업과정은 개인의 작업을 더욱 깊고 다양한 시점에서 볼 수 있게 해줍니다.
-                            </p>
+                <p id="contents">
+                    <br>
+                    발생한 경험의 공유와 순환은 또 다른 곳으로, 또 다른 시간대로 끊임없이 공유되고 순환되길 바랍니다.
+                    <br><br>
+                </p>
+            </div>
 
-                            <p id="article-bold">
-                                2. 타인의 작업에 대한 피드백을 위해 본인의 가치관에 대해 한번 더 생각해 볼 수 있습니다                                 
-                            </p>
+            <div class="blockBox"></div>
 
-                            <p id="article-bold">
-                                3. 관람객 중 미대 입시생(중/고등학생)에게 전공 선택과 진학을 위한 가이드가 되어줍니다                            
-                            </p>
+            <p id="title">
+                우리는 모두<br>
+                서로의 경험이  되어줍니다 
+            </p>
 
-                            <p id="article-normal">
-                                많은 입시생은 실질적 정보의 부족으로 전공선택에 어려움을 겪고 있습니다. 입시생들의 전공 이해를 돕는 계기가 됩니다.                            
-                            </p>
+            <p id="subtitle01">Exhibition Advantages</p>
 
-                            <hr>
+            <img src="../src/Exhibition/16.png" alt="mainImg_6" class="mainImg_3">
 
-                            <p id="article-No">
-                                03
-                            </p>
+            <p id="subtitle02">
+                인터뷰를 통한 졸업작품 디벨롭
+            </p>
 
-                            <p id="article-title">
-                                영향을 받을 <br>
-                                많은 사람들
-                            </p>
+            <p id="contents">
+                <br>
+                오너먼트의 다양한 인터뷰 질문에 답변하며, 작품과 디자인에 대해 정리해 볼 수 있는 계기를 제공합니다.
+                <br><br>
+                작품에 대한 심도 있는 대화를 통해 디벨롭 요소를 찾으며 각자의 포트폴리오를 발전시킬 수 있습니다.
+                <br><br>
+            </p>
 
-                            <p id="article-bold">
-                                1. 관람객들의 ‘바이럴’, ‘전시 관람 경험이 미친 영향을 바탕으로 한 작업’을 통해
-                                또 다른 사람들에게 2차 공유와 순환이 발생합니다                             
-                            </p>
+            <!-- * 가로줄  -->
+            <div class="line_box">
+                <div class="line"></div>
+            </div>
 
-                            <p id="article-bold">
-                                2. 발생한 경험의 공유와 순환은 또 다른 곳으로, 또 다른 시간대로 끊임없이 공유되고 순환되길 바랍니다                            
-                            </p>
+            <p id="contents">
+                인터뷰를 통해 참가자 각자의 과정을 ‘개인 책자’에 담아드립니다.
+            </p>
 
-                            <hr>
+            <img src="../src/Exhibition/17.png" alt="mainImg_17" class="mainImg_3">
 
-                            <p id="article-title-big">
-                                참가자 프로세스
-                            </p>
+            <p id="subtitle02">
+                소통 기반의 오너먼트 전시
+            </p>
 
-                            <p id="article-subtitle">
-                                참가자는 어떤 작업을 해야하나요?
-                            </p>
+            <p id="contents">
+                디자이너에게 커뮤니케이션 능력은 큰 장점으로 작용합니다. 
+                제 3자와의 소통을 통한 디자인 디벨롭은 디자이너에게 중요한 역량입니다.            
+            </p>
 
-                            <p id="article-normal">
-                                인터뷰 진행, 졸작과 관련된 소스 등 개별 인터뷰가 진행 될 예정입니다. 
-                                대면, 비대면, 메신저 이용 등 편한 방식으로 작품과 참가자의 과정에 대한 이야기를 오너먼트와 하게 됩니다. 
-                                (작품은 전시 당일 가져와야 함)
-                            </p>
+             <!-- * 가로줄  -->
+            <div class="line_box">
+                <div class="line"></div>
+            </div>
 
-                            <img src="../src/Exhibition/process.png" alt="프로세스 이미지 305x114" id="processimg" >
+            <p id="contents">
+                다양한 대학의 졸업예정 학부생(참가자)간의, 관람객과의 소통 기회를 제공합니다.          
+            </p>
 
-                            <div class="decorate_3">
-                                <div class='v-line'></div>
-                            </div>
+            <img src="../src/Exhibition/18.png" alt="mainImg_18" class="mainImg_3">
 
-                            <p>
-                                <br> <br> <br><br> <br> <br><br> <br> <br><br> 
-                                <br> <br><br> <br> <br><br> <br> <br><br><br>
-                            </p>
+            <p id="subtitle02">
+                관람객과 관련된 데이터 제공
+            </p>
 
-                            
-                        </div>
-                        <button class="toggle-button">↓ 화살표 버튼</button>
+            <p id="contents">
+                디지털 방명록을 통해 특정되지 않은 다수 관람객들의 의견을 받아볼 수 있습니다. 
+                디자인에서 중요한 ‘일반 소비자’의 의견에 대해 알 수 있는 기회를 제공합니다.          
+            </p>
+
+            <!-- * 가로줄  -->
+            <div class="line_box">
+                <div class="line"></div>
+            </div>
+
+            <p id="contents">
+                디지털 방명록, 총 방문객 수, 설문결과 등 전시 관람객과 관련된 데이터를 제공합니다.
+            </p>
+        
+            <div class="grayBox">
+                <p id="subtitle03">
+                    참가자의 작품 가치를 확장시키고<br>관람객은 여러분의 작품을 통해 인사이트를 얻습니다.
+                </p>
+
+                <p id="contents">
+                    *자세한 내용과 디테일 디자인은 참가모집 완료 후 참가자에게만 공개됩니다.
+                </p>
+            </div>
+
+            <div class="exhibitionBox">
+                <p id="title">전시회 안내</p>
+
+                <p id="subtitle01">전시기간</p>
+    
+                <p id="contents">2024년 1월 31일 ~2월5일 (6일)</p>
+    
+                <p id="subtitle01">장&nbsp; &nbsp; &nbsp;소</p>
+    
+                <p id="contents">57th갤러리 (서울 종로구 율곡로3길 17)</p>
+            </div>
+            
+
+            <!-- * 둥근 박스  -->
+            <div class="roundBox">
+                <img src="../src/Exhibition/19.png" alt="mainImg_19" class="mainImg_4">
+                <p id="">Exhibition Place Detail</p>
+                <img src="../src/Exhibition/20.png" alt="mainImg_20" class="mainImg_5">
+            </div>
+
+            <p id="contents">*전시 공간 및 디스플레이 관련 설명은 위 페이지에서 확인 가능합니다.</p>
+
+            <div class="participateBox">
+                <p id="title">참가자 프로세스</p>
+
+                <p id="subtitle01">참가자는 어떤 작업을 해야하나요?</p>
+    
+                <p id="contents">
+                    인터뷰 진행, 졸작과 관련된 소스 등 개별 인터뷰가 진행 될 예정입니다. 
+                    대면, 비대면, 메신저 이용 등 편한 방식으로 작품과 참가자의 과정에 대한 이야기를 오너먼트와 하게 됩니다. 
+                    (작품은 전시 당일 가져와야 합니다.)
+                </p>
+            </div>
+
+            <img src="../src/Exhibition/21.png" alt="mainImg_20" class="mainImg_1">
+
+            
+            <img src="../src/Exhibition/group img.png" alt="mainImg_20" class="mainImg_1">
+
+            <!-- * 둥근 박스  -->
+            <div class="roundBox">
+                <a href="ohttps://omt-ornament.notion.site/omt-ornament/omt-ad3b8d230fc74f219d163ff1a9c89fa6" >
+                    <img src="../src/Exhibition/19.png" alt="mainImg_19" class="mainImg_4">
+                    <p id="">Exhibition Place Detail</p>
+                    <img src="../src/Exhibition/20.png" alt="mainImg_20" class="mainImg_5">
+                </a>
+            </div>
+
+            <!-- * 직사각형 박스  -->
+            <div class="boxContainer">
+                <div class="box_2">
+                    <div class="boxText_2">
+                        <p id="boxText_2">How to Participate</p>
                     </div>
-
-
-                <div class="decorate_1">
-                    <img src="../src/Exhibition/01.png" alt="꾸밈이미지 1" id="decorate_1" >
+                    <div class="iconImg_2">
+                        <img src="../src/Home/arrowWhite.png" alt="logo" id="iconImg_2">
+                    </div>
                 </div>
             </div>
 
-               
-
-                <p id="article-title-big">
-                    전시 일정
-                </p>
-
-                <p id="article-normal">
-                    전시 일정 : 2024년 01~02월 예정 <br>
-                    전시 장소 : 57th 갤러리 (서울특별시 종로구 송현동 57)
-                </p>
-                
-                <div class="decorate_4-6">
-                    <img src="../src/Exhibition/02.png" alt="꾸밈이미지" id="decorate_4" >
-                    <img src="../src/Exhibition/03.png" alt="꾸밈이미지" id="decorate_5" >
-                    <img src="../src/Exhibition/04.png" alt="꾸밈이미지" id="decorate_6" >
-                    <p id="">Exhibition Overview</p>
-                </div>
-
-                <p id="article-title-big">
-                    참가 방법
-                </p>
-
-                <p id="article-subtitle">
-                    참가 대상 및 참가비
-                </p>
-                <p id="article-normal">
-                    참가 대상 : 시각, 산업, 공간(환경), 패션, 공예 - 총 00명 <br>
-                    참가비 : 000원  /  보증금 : 000원 <br>
-                    (보증금은 전시 후 전액 반환됩니다.) <br>
-                </p>
-
-                <p id="article-subtitle">
-                    모집 구분
-                </p>
-                <p id="article-normal">
-                    전시 시기에 따라 참가자 모집 구분이 상이하니 아래 참가 규정을 확인해주세요.
-                </p>
-
-                <p id="article-bold">
-                    전기 : 2023년 11월 19일 이전                 
-                </p>
-
-                <p id="article-normal">
-                    (전기 모집 마감일 : 2023년 11월 27일)
-                </p>
-
-                <p id="article-bold">
-                    후기 : 2023년 11월 20일 이후                
-                </p>
-
-                <p id="article-normal">
-                    (후기 모집 마감일 : 2023년 12월 26일)                
-                </p>
-
-                <p id="article-normal">
-                    *전시 시작일을 기준으로 합니다                
-                </p>
-
-
-                <p id="article-bold">
-                    FAQ페이지에서 예상질문과 답변을 참고, <br>
-                    추가 질문은 카카오 채널을 이용해주세요.              
-                </p>
-
-                <div class="decorate_7">
-                    <img src="../src/Exhibition/group img.png" alt="꾸밈이미지" id="decorate_7" >
-                </div>
-
-                <p id="article-bold">
-                    To Participate            
-                </p>
-
-                <p id="article-normal">
-                    참가를 원하실경우 하단의 구글폼을 작성해주시면 참가 완료입니다. 
-                    전시 시기에 따라 모집 구분이 상이하니 자세한 내용은 참가 규정을 확인해주세요                
-                </p>
-
-
-                <p id="article-normal">
-                    1차 참가 신청하기
-                </p>
-
-                <div class="inviteURL_1">
-                    <a href="https://forms.gle/fBScPHtNuxYHUiy16" id="inviteURL">Join Us</a>
-                </div>
-
-                <hr>
-
-                <p id="article-normal">
-                    2차 참가 신청하기
-                </p>
-
-                <div class="inviteURL_1">
-                    <a href="#" id="inviteURL">Comming Soon</a>
-                </div>
-
-
-                <p id="article-normal">
-                    오너먼트는 여러분의 경험을 효과적으로 전달하기 위해 마지막까지 노력하겠습니다                
-                </p> 
-
-
-
-
-
-
-            </body>
-        
-
             <footer>
-                <div class="invite">
-                    <p id="invite">To Participate</p>
-                    <div class="inviteURL">
-                        <a href="https://forms.gle/fBScPHtNuxYHUiy16" id="inviteURL">google form</a>
-                    </div>
-                </div>
-
+                <div class="hrContainer"><hr></div>
+    
                 <div class="info">
                     <p id="info">CONTACT US</p>
                     <div class="kakao">
                         <img src="../src/kakao.png" alt="카카오 채널 이미지" id="kakaopng">
-                        <a href="#" id="kakoURL">kakao</a>
+                        <a href="https://pf.kakao.com/_xmUxaEG" id="kakoURL">omt.ornament</a>
                     </div>
-
+    
                     <div class="instargram">
                         <img src="../src/insta.png" alt="인스타그램 이미지" id="instargrampng">
-                        <a href="#"  id="instargramURL">instagram</a>
+                        <a href="https://www.instagram.com/omt.ornament/"  id="instargramURL">@omt.ornament</a>
                     </div>
-
+    
                     <div class="mail">
                         <img src="../src/email.png" alt="지메일 이미지" id="mailpng">
-                        <a href="#"  id="mailURL">mail</a>
+                        <a href="mailto:omt.ornament@gmail.com" id="mailURL">omt.ornament@gmail.com</a>
                     </div>
                 </div>
+    
+                <div class="hrContainer"><hr></div>
+            
+                <div class="footerEnd">
+                    <img src="../src/newlogo.png" alt="logo" id="footerLogo">
+                    <p id="footerText">Project brand omt.ornament</p>
+                </div>
             </footer>
-        </div>
     </body>
+
+</div>
 </html>
