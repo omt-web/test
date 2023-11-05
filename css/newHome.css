@@ -362,12 +362,6 @@
 }
 
 /** 박스  */
-.blank {
-    width: 100vw;
-    height: 15vw;
-    background-color: #ffffff;
-}
-
 /* 추가: 페이지 전체를 감싸는 컨테이너 */
 .boxContainer {
     margin-top: 10vw;
