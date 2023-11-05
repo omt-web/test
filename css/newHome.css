@@ -362,9 +362,15 @@
 }
 
 /** 박스  */
+.blank {
+    width: 100vw;
+    height: 15vw;
+    background-color: #ffffff;
+}
+
 /* 추가: 페이지 전체를 감싸는 컨테이너 */
 .boxContainer {
-    
+    margin-top: 10vw;
     position: relative; /* 자식 요소의 절대 위치 설정을 가능하게 합니다 */
     display: flex;
     justify-content: center;
