@@ -1,0 +1,22 @@
+/*! improt */
+@import url('./apple-reset.css');        /** 애플 기종 초기화 */
+@import url('font.css');        /** 폰트 */
+@import url('normalize.css');   /** 전범위 초기화 */
+@import url('r-navbar.css');    /** 반응형 나브 바 */
+@import url('r-footer.css');    /** 반응형 푸터 */
+
+
+
+
+
+.i-phone14-pro24-frame3 {
+    top: 2941px;
+    left: 0px;
+    width: 414px;
+    height: 470px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
