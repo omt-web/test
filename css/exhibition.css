@@ -163,6 +163,7 @@
     justify-content: space-between; /* 자식 요소 간의 공간을 최대한 확보하여 왼쪽 정렬과 오른쪽 정렬을 구현 */
     align-items: center; /* 수직 가운데 정렬 */
     padding: 0vw;
+    margin-bottom: 0vw;
 }
 
 .subtitle03Box {
@@ -375,6 +376,13 @@
     margin-left: 10vw;
     margin-top: 25vw;
 }
+
+.mainImg_6 {
+    margin-left: 10vw;
+    max-width: 80vw; /* 최대 너비 설정 */
+    height: auto; /* 이미지 비율 유지 */
+}
+
 
 
 /* * 라운드 박스 */
