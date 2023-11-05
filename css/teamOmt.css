@@ -1,0 +1,222 @@
+/*! improt */
+@import url('./apple-reset.css');        /** 애플 기종 초기화 */
+@import url('font.css');        /** 폰트 */
+@import url('normalize.css');   /** 전범위 초기화 */
+@import url('r-navbar.css');    /** 반응형 나브 바 */
+@import url('r-footer.css');    /** 반응형 푸터 */
+
+
+/**! 반응형 상세설정 */
+@media (max-width: 480px) {     /** 모바일 화면 */
+    /*! body  */
+
+    #test_title {
+        font-size: 31.5px;
+        line-height: 30px; 
+    }
+
+    #test_article {
+        font-size: 13.5px;
+        line-height: 19px; 
+    }
+    
+   
+    #test_subtitle_1 {
+        font-size: 13.5px;
+        line-height: 23px; 
+    }
+   
+    #test_subtitle_2 {
+        font-size: 13.5px;
+        line-height: 23px; 
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {     /**태블릿 화면 */
+    /*! body  */
+   
+
+    #test_title {
+        font-size: 49.26px;
+        line-height: 47px; 
+    }
+
+    #test_article {
+        font-size: 21.05px;
+        line-height: 29.733p; 
+    }
+    
+    #test_subtitle_1 {
+        font-size: 21.05px;
+        line-height:  36.83px; 
+    }
+    
+    #test_subtitle_2 {
+        font-size: 21.05px;
+        line-height:  36.83px; 
+    }
+    
+   
+}
+
+@media (min-width: 1025px) {     /** 데스크탑 화면 */
+    /*! body  */
+   
+    #test_title {
+        font-size: 84.0px;
+        line-height: 80.0px; 
+    }
+
+    #test_article {
+        font-size: 36.0px;
+        line-height: 50.7px; 
+    }
+    
+    #test_subtitle_1 {
+        font-size: 36.0px;
+        line-height: 61.3px; 
+    }
+
+    #test_subtitle_2 {
+        font-size: 36.0px;
+        line-height: 61.3px; 
+    }
+    
+}
+
+/**! home page style */
+
+
+
+
+
+/** 메인 이미지  */
+.mainImg_1 {
+    margin: 0vw;
+    padding-top: 20vw;
+    padding-bottom: 8vw;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+
+#mainImg_1 {
+    margin: 0vw;
+    padding: 0vw;
+    width: 15vw;
+    padding: 0vw;
+
+}
+
+/* *  */
+.groupBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 50vw;
+}
+
+.textBox {
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.textBox > #test_subtitle_2,
+.textBox > #test_article  {
+    margin: 0vw 0vw 2vw 10vw;
+    padding: 0vw;
+}
+
+
+/* * 각진 박스 */
+.boxContainer {
+    position: relative; /* 자식 요소의 절대 위치 설정을 가능하게 합니다 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw;
+    margin-top: 80vw;
+    padding: 0;
+    overflow: hidden; /* 화면 스크롤 방지 */
+}
+
+.box_2 {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 90vw;
+    border: 0.5vw solid #000;
+    background-color: #000;
+    justify-content: center; /* 수평 중앙 정렬 */
+    height: 10vw
+}
+
+.boxText_2 {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+#boxText_2 {
+    color: #ffffff;
+    font-family: 'Suit-SemiBold', -apple-system; 
+    font-style: normal;
+    font-weight: 600;
+}
+
+.iconImg_2 {
+    display: flex;
+    justify-content: flex-end; /* 요소를 컨테이너의 오른쪽 끝으로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+#iconImg_2 {
+    width: 3vw;
+    padding-left: 10vw;
+}
+
+
+
+
+
+/** 텍스트 요소 */
+#test_title {
+    margin-top: 50vw;
+    margin-left: 10vw;
+    color: #000;
+    font-family: -apple-system; 
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 8vw;
+}
+
+#test_article {
+    margin-left: 35vw;
+    margin-right: 10vw;
+    color: #000;
+    font-family: 'Pretendard-Regular', -apple-system; 
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5vw;
+}
+
+#test_subtitle_1 {
+    margin-left: 10vw;
+    color: #7a7a7a;
+    font-family: 'Suit-SemiBold', -apple-system; 
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 3vw;
+}
+
+#test_subtitle_2 {
+    margin-left: 35vw;
+    color: #000;
+    font-family: 'Suit-SemiBold', -apple-system; 
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 3vw;
+}
+
+
+
