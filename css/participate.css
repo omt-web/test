@@ -1,0 +1,31 @@
+/*! import  */
+@import url('./apple-reset.css');        /** 애플 기종 초기화 */
+@import url('font.css');        /** 폰트 */
+@import url('normalize.css');   /** 전범위 초기화 */
+@import url('r-navbar.css');    /** 반응형 나브 바 */
+@import url('r-footer.css');    /** 반응형 푸터 */
+
+
+
+
+
+
+/* * 페이지 본분 */
+
+/* * 스크롤 박스  */
+.scroll-box {
+    width: 300px; /* 원하는 네모 박스 크기로 조절하세요 */
+    height: 400px; /* 원하는 네모 박스 크기로 조절하세요 */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-top: 80vw;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* 스크롤 막대를 추가할 수 있습니다. */
+.scroll-box {
+    overflow-y: scroll;
+}
