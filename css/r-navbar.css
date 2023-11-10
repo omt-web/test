@@ -156,6 +156,7 @@
     margin: 0vw;
     padding-top: 2vw;
     padding-bottom: 10vw;
+    z-index: 99999;
 }
 
 #nav-menu {
