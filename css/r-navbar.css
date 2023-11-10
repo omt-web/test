@@ -203,6 +203,7 @@
     position: fixed;
     float: center;
     transition: right 0.7s ease-in-out; /* 왼쪽으로 이동할 때 애니메이션 적용*/
+    z-index: 1000;
 }
 
 .menu a { 
